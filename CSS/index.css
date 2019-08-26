@@ -33,14 +33,27 @@
 body {
   margin: 0;
 }
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 2.3rem;
+}
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
 .container {
   margin: 0 auto;
   height: 100vh;
   box-sizing: border-box;
 }
-header {
+.site-header {
   border-bottom: 1px solid #606060;
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
 }
 .sign-up-page {
   padding-top: 10rem;
@@ -274,4 +287,24 @@ header {
   background-color: white;
   color: #E17F93;
   border: 1px solid #E17F93;
+}
+/*page */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #E17F93;
+  color: #fff;
+}
+.page-nav ul li {
+  display: inline;
+  margin: 2rem;
+}
+.page-nav ul li a {
+  color: #606060;
+  text-decoration: none;
+}
+a.search {
+  padding: 0.5rem 5rem;
+  background-color: #fff;
 }
