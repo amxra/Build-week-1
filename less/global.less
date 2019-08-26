@@ -1,1 +1,102 @@
 
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    box-sizing: border-box;
+
+    // &.homepage{
+    //     background-image: url('https://i.pinimg.com/564x/a2/0a/95/a20a9532fe6ebd96e4893058587a3771.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //     // opacity:0.5;
+    //     }
+}
+
+.sign-up-page{
+
+    padding-top: 10rem;
+   
+}
+
+.sign-up-page-header{
+    text-align: center;
+    padding-top:2rem;
+    box-shadow: 2rem;
+    
+}
+
+.sign-up-form{
+    border: 2px solid white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    width: 50%;
+    margin: 5rem auto 0 auto;
+   
+}
+
+
+
+input{
+    border: 1px solid @accentColor;
+
+    &[type="text"],&[type="email"], &[type="submit"]{
+        display: block;
+        width: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    &[type ="password"]{
+        margin-left: 1.5rem;
+    }
+
+    &[type ="username"], &[type ="password"]{
+        margin-bottom: 1rem;
+    }
+
+    &[type ="submit"]{
+        width: 12rem;
+        margin-left: 3rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        color: white;
+        background-color: @navigationBackgroundColor;
+        border: @navigationBackgroundColor;
+
+        &:hover{
+        background-color: white;
+        color:@navigationBackgroundColor;
+        }
+
+    }
+}
+
+.login-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button a{
+    background-color: white;
+    border-radius: 2rem;
+    width: 10%;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+    color: @navigationBackgroundColor;
+
+    &:hover{
+        background-color: @navigationBackgroundColor;
+        color: white;
+    }
+
+}
