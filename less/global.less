@@ -57,16 +57,15 @@ h4{
 }
 
 .sign-up-form{
-    border: 2px solid white;
+    border: 2px solid @navigationBackgroundColor;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: white;
     width: 50%;
-    margin: 5rem auto 0 auto;
+    margin: 5rem auto 2rem auto;
    
 }
 
@@ -167,6 +166,8 @@ h4{
         .button{
             .mainButton;
             margin-bottom: 1rem;
+            width: 8rem;
+            margin-left: 2rem;
 
             &:hover{
                 .mainButtonHover
@@ -186,6 +187,13 @@ h4{
         }
     }
 
+}
+
+.page-header{
+    a{
+        color: @navColor;
+        text-decoration: none;
+    }
 }
 
 
@@ -295,15 +303,16 @@ h4{
     text-align: center;
 
     .profile-image{
-        border: 1px solid @accentColor;
+        border: 2px solid @accentColor;
         height: 200px;
-        width: 60%;
+        width: 70%;
         margin: 2rem auto;
         border-radius: 6rem;
 
         img{
-            width: 100%;
-            height: 100%;
+           width: 100%;
+           height: 100%;
+           border-radius: 6rem; 
         }
     }
     h4,p{
@@ -401,4 +410,37 @@ h4{
 
 .add-restaurant{
     .addButton;
+}
+
+
+
+/*Cactus Page */
+
+.restaurant-page-header{
+    margin: @pageContainerAlingment;
+    width: 70%;
+    text-align: center;
+}
+
+.restaurant-body{
+    border: 1px solid @navigationBackgroundColor;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2rem;
+
+    h3{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .restaurant-bio{
+        width: 40%;
+    }
+    .restaurant-menu{
+        width: 40%;
+        padding: 2rem 8rem;
+    }
 }
