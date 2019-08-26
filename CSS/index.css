@@ -1,6 +1,8 @@
 .formBoxes {
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #606060;
+  text-align: center;
 }
 .mainButton {
   padding: 0.5rem;
@@ -9,6 +11,16 @@
   background-color: #E17F93;
   border: #E17F93;
 }
+.linkStyle {
+  color: #606060;
+  text-decoration: none;
+}
+.linkHover {
+  color: #E17F93;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -16,6 +28,10 @@ body {
   margin: 0 auto;
   height: 100vh;
   box-sizing: border-box;
+}
+header {
+  border-bottom: 1px solid #606060;
+  padding: 0rem 2rem;
 }
 .sign-up-page {
   padding-top: 10rem;
@@ -44,7 +60,9 @@ body {
 .sign-up-form input[type="email"],
 .sign-up-form input[type="submit"] {
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #606060;
+  text-align: center;
   width: 18rem;
 }
 .sign-up-form input[type="password"] {
@@ -88,7 +106,7 @@ body {
 /* log-in page */
 .log-in-page {
   max-width: 900px;
-  margin: 12% auto;
+  margin: 10% auto;
   display: flex;
   justify-content: space-evenly;
 }
@@ -111,7 +129,8 @@ body {
 .log-in-page .log-in-form input[type="text"],
 .log-in-page .log-in-form input[type="password"] {
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #606060;
   width: 10rem;
   text-align: center;
   margin: 1rem;
@@ -139,7 +158,45 @@ body {
 }
 /* Forgot Password */
 .forgot-password-form {
-  border: 1px solid black;
-  margin: 12% auto;
+  border: 1px solid #606060;
+  margin: 10% auto;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.forgot-password-form input[type="text"] {
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #606060;
+  text-align: center;
+  width: 12rem;
+}
+.forgot-password-form form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forgot-password-form form input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: #E17F93;
+  border: #E17F93;
+  padding: 0.5rem 1rem;
+}
+.forgot-password-form form a {
+  color: #606060;
+  text-decoration: none;
+}
+.forgot-password-form form a:hover {
+  color: #E17F93;
+}
+.forgot-password-form form hr {
+  width: 100%;
+  margin: 1rem;
 }
