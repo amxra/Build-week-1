@@ -137,3 +137,9 @@ body {
 .log-in-page .log-in-form hr {
   margin: 1rem 0;
 }
+/* Forgot Password */
+.forgot-password-form {
+  border: 1px solid black;
+  margin: 12% auto;
+  width: 50%;
+}
