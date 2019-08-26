@@ -272,7 +272,7 @@ h4{
 
 
 
-/*page */
+/*profile */
 
 .page-header{
     display: flex;
@@ -283,7 +283,6 @@ h4{
 }
 
 .profile-body{
-    border: 1px solid red;
     max-width: 80%;
     margin: @pageContainerAlingment;
     display: flex;
@@ -292,7 +291,6 @@ h4{
 }
 
 .bio{
-    border: 1px solid blue;
     max-width: 30%;
     text-align: center;
 
@@ -319,13 +317,16 @@ h4{
 
 
 .passports{
-    border: 1px solid blue;
     width: 50%;
-    overflow: scroll;
+    text-align: center;
+
+    .stats{
+        margin-top: 2rem;
+    }
 
     h4{
         display: inline;
-        border: 1px solid red;
+
         margin: 1.5rem;
     }
 
@@ -345,12 +346,8 @@ h4{
 }
 
 
-.add{
-    border: 1px solid red;
-    padding: 2rem;
-    border-radius: 10rem;
-   
-    
+.add-passport{
+    .addButton;
 }
 
 
@@ -360,6 +357,7 @@ h4{
 .passport-body{
     border: 1px solid red;
     margin: @pageContainerAlingment;
+    margin-top: 5%;
 
     .passport-body-header{
         border: 1px solid @navigationBackgroundColor;
@@ -372,7 +370,7 @@ h4{
 
     .passport-body-content{
         border: 1px solid red;
-        margin: 4rem 2rem;
+        margin: 3rem 2rem;
         display: flex;
         justify-content: space-evenly;
 
@@ -398,4 +396,9 @@ h4{
         }
     }
 
+}
+
+
+.add-restaurant{
+    .addButton;
 }

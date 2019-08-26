@@ -27,6 +27,14 @@
 .linkHover {
   color: #E17F93;
 }
+.addButton {
+  border: 1px solid #E17F93;
+  width: 20%;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin: 1rem auto;
+  text-align: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -132,7 +140,7 @@ h4 {
 /* log-in page */
 .log-in-page {
   max-width: 900px;
-  margin: 10% auto;
+  margin: 8% auto;
   display: flex;
   justify-content: space-evenly;
 }
@@ -205,7 +213,7 @@ h4 {
 /* Forgot Password */
 .forgot-password-form {
   border: 1px solid #606060;
-  margin: 10% auto;
+  margin: 8% auto;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -269,7 +277,7 @@ h4 {
 /*Sucess */
 .success-page {
   width: 50%;
-  margin: 10% auto;
+  margin: 8% auto;
   text-align: center;
 }
 .success-page h1 {
@@ -288,7 +296,7 @@ h4 {
   color: #E17F93;
   border: 1px solid #E17F93;
 }
-/*page */
+/*profile */
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -297,14 +305,12 @@ h4 {
   color: #fff;
 }
 .profile-body {
-  border: 1px solid red;
   max-width: 80%;
-  margin: 10% auto;
+  margin: 8% auto;
   display: flex;
   justify-content: space-evenly;
 }
 .bio {
-  border: 1px solid blue;
   max-width: 30%;
   text-align: center;
 }
@@ -327,13 +333,14 @@ h4 {
   margin: 1rem;
 }
 .passports {
-  border: 1px solid blue;
   width: 50%;
-  overflow: scroll;
+  text-align: center;
+}
+.passports .stats {
+  margin-top: 2rem;
 }
 .passports h4 {
   display: inline;
-  border: 1px solid red;
   margin: 1.5rem;
 }
 .passports ul li {
@@ -346,15 +353,19 @@ h4 {
   color: black;
   text-decoration: none;
 }
-.add {
-  border: 1px solid red;
-  padding: 2rem;
-  border-radius: 10rem;
+.add-passport {
+  border: 1px solid #E17F93;
+  width: 20%;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin: 1rem auto;
+  text-align: center;
 }
 /* location */
 .passport-body {
   border: 1px solid red;
-  margin: 10% auto;
+  margin: 8% auto;
+  margin-top: 5%;
 }
 .passport-body .passport-body-header {
   border: 1px solid #E17F93;
@@ -365,7 +376,7 @@ h4 {
 }
 .passport-body .passport-body-content {
   border: 1px solid red;
-  margin: 4rem 2rem;
+  margin: 3rem 2rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -386,6 +397,14 @@ h4 {
 .passport-body .passport-body-content .save-badge {
   border: 1px solid blue;
   width: 20%;
+}
+.add-restaurant {
+  border: 1px solid #E17F93;
+  width: 20%;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin: 1rem auto;
+  text-align: center;
 }
 .page-nav ul li {
   display: inline;
