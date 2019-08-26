@@ -7,7 +7,6 @@
 .mainButton {
   padding: 0.5rem;
   border-radius: 2rem;
-  color: white;
   background-color: #E17F93;
   border: #E17F93;
 }
@@ -72,16 +71,19 @@ header {
 .sign-up-form input[type="password"] {
   margin-bottom: 1rem;
 }
-.sign-up-form input[type="submit"] {
+.sign-up-form form a {
+  display: block;
+  text-align: center;
   width: 12rem;
   margin-left: 3rem;
   padding: 0.5rem;
   border-radius: 2rem;
-  color: white;
   background-color: #E17F93;
   border: #E17F93;
+  color: white;
+  text-decoration: none;
 }
-.sign-up-form input[type="submit"]:hover {
+.sign-up-form form a:hover {
   background-color: white;
   color: #E17F93;
 }
@@ -139,7 +141,6 @@ header {
   width: 10rem;
   padding: 0.5rem;
   border-radius: 2rem;
-  color: white;
   background-color: #E17F93;
   border: #E17F93;
   display: block;
@@ -184,7 +185,6 @@ header {
 .forgot-password-form form input[type="submit"] {
   padding: 0.5rem;
   border-radius: 2rem;
-  color: white;
   background-color: #E17F93;
   border: #E17F93;
   padding: 0.5rem 1rem;
@@ -199,4 +199,21 @@ header {
 .forgot-password-form form hr {
   width: 100%;
   margin: 1rem;
+}
+/*Sucess */
+.success-page {
+  width: 50%;
+  margin: 10% auto;
+  text-align: center;
+}
+.success-page h1 {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+}
+.success-page a {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #E17F93;
+  border: #E17F93;
+  padding: 1rem 5rem;
 }

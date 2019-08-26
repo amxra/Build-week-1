@@ -72,16 +72,21 @@ header{
         margin-bottom: 1rem;
     }
 
-    &[type ="submit"]{
-        width: 12rem;
-        margin-left: 3rem;
-        .mainButton;
 
-        &:hover{
-        background-color: white;
-        color:@navigationBackgroundColor;
-        }
+    }
 
+  .sign-up-form form a{
+      display: block;
+      text-align: center;
+     width: 12rem;
+     margin-left: 3rem;
+    .mainButton;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+    background-color: white;
+    color:@navigationBackgroundColor;
     }
 }
 
@@ -209,4 +214,24 @@ header{
         }
     }
 
+}
+
+
+/*Sucess */
+
+.success-page{
+    width: 50%;
+    margin: @pageContainerAlingment;
+    text-align: center;
+
+    h1{
+        margin-bottom: 5rem;
+        font-size: 5rem;
+    }
+
+    a{
+        .mainButton;
+        padding: 1rem 5rem;
+        
+    }
 }
