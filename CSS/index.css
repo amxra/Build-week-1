@@ -296,6 +296,97 @@ h4 {
   background-color: #E17F93;
   color: #fff;
 }
+.profile-body {
+  border: 1px solid red;
+  max-width: 80%;
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bio {
+  border: 1px solid blue;
+  max-width: 30%;
+  text-align: center;
+}
+.bio .profile-image {
+  border: 1px solid #606060;
+  height: 200px;
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 6rem;
+}
+.bio .profile-image img {
+  width: 100%;
+  height: 100%;
+}
+.bio h4,
+.bio p {
+  text-align: center;
+}
+.bio p {
+  margin: 1rem;
+}
+.passports {
+  border: 1px solid blue;
+  width: 50%;
+  overflow: scroll;
+}
+.passports h4 {
+  display: inline;
+  border: 1px solid red;
+  margin: 1.5rem;
+}
+.passports ul li {
+  border: 1px solid #E17F93;
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.passports ul li a {
+  color: black;
+  text-decoration: none;
+}
+.add {
+  border: 1px solid red;
+  padding: 2rem;
+  border-radius: 10rem;
+}
+/* location */
+.passport-body {
+  border: 1px solid red;
+  margin: 10% auto;
+}
+.passport-body .passport-body-header {
+  border: 1px solid #E17F93;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 30%;
+}
+.passport-body .passport-body-content {
+  border: 1px solid red;
+  margin: 4rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.passport-body .passport-body-content .restaurant-name {
+  border: 1px solid blue;
+  width: 40%;
+  font-size: 2rem;
+  text-align: center;
+}
+.passport-body .passport-body-content .restaurant-name a {
+  color: black;
+  text-decoration: none;
+}
+.passport-body .passport-body-content .visit-badge {
+  border: 1px solid blue;
+  width: 20%;
+}
+.passport-body .passport-body-content .save-badge {
+  border: 1px solid blue;
+  width: 20%;
+}
 .page-nav ul li {
   display: inline;
   margin: 2rem;
