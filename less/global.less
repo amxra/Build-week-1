@@ -7,6 +7,7 @@ body{
     margin: 0 auto;
     height: 100vh;
     box-sizing: border-box;
+    // border: 1px solid red;
 
     // &.homepage{
     //     background-image: url('https://i.pinimg.com/564x/a2/0a/95/a20a9532fe6ebd96e4893058587a3771.jpg');
@@ -45,13 +46,13 @@ body{
 
 
 
-input{
+.sign-up-form input{
     border: 1px solid @accentColor;
 
     &[type="text"],&[type="email"], &[type="submit"]{
-        display: block;
+        .formBoxes;
         width: 18rem;
-        margin-bottom: 1rem;
+        
     }
 
     &[type ="password"]{
@@ -65,11 +66,7 @@ input{
     &[type ="submit"]{
         width: 12rem;
         margin-left: 3rem;
-        padding: 0.5rem;
-        border-radius: 2rem;
-        color: white;
-        background-color: @navigationBackgroundColor;
-        border: @navigationBackgroundColor;
+        .mainButton;
 
         &:hover{
         background-color: white;
@@ -97,6 +94,63 @@ input{
     &:hover{
         background-color: @navigationBackgroundColor;
         color: white;
+    }
+
+}
+
+
+/* log-in page */
+
+.log-in-page{
+    max-width: 900px;
+    margin: 12% auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .log-in-page-image{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .log-in-form{
+        width: 40%;
+        border: 1px solid @accentColor;
+        border-radius: 2rem;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        input[type ="text"], input[type ="password"]{
+            .formBoxes;
+            width: 10rem;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        input[type ="submit"]{
+            width: 10rem;
+            .mainButton;
+            display: block;
+            margin-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        a{
+            color: @accentColor;
+            text-decoration: none;
+
+            &:hover{
+                color: @navigationBackgroundColor;
+            }
+        }
+
+        hr{
+            margin: 1rem 0;
+        }
     }
 
 }

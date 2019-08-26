@@ -1,3 +1,14 @@
+.formBoxes {
+  display: block;
+  margin-bottom: 1rem;
+}
+.mainButton {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: #E17F93;
+  border: #E17F93;
+}
 body {
   margin: 0;
 }
@@ -26,24 +37,24 @@ body {
   width: 50%;
   margin: 5rem auto 0 auto;
 }
-input {
+.sign-up-form input {
   border: 1px solid #606060;
 }
-input[type="text"],
-input[type="email"],
-input[type="submit"] {
+.sign-up-form input[type="text"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="submit"] {
   display: block;
-  width: 18rem;
   margin-bottom: 1rem;
+  width: 18rem;
 }
-input[type="password"] {
+.sign-up-form input[type="password"] {
   margin-left: 1.5rem;
 }
-input[type="username"],
-input[type="password"] {
+.sign-up-form input[type="username"],
+.sign-up-form input[type="password"] {
   margin-bottom: 1rem;
 }
-input[type="submit"] {
+.sign-up-form input[type="submit"] {
   width: 12rem;
   margin-left: 3rem;
   padding: 0.5rem;
@@ -52,7 +63,7 @@ input[type="submit"] {
   background-color: #E17F93;
   border: #E17F93;
 }
-input[type="submit"]:hover {
+.sign-up-form input[type="submit"]:hover {
   background-color: white;
   color: #E17F93;
 }
@@ -73,4 +84,56 @@ input[type="submit"]:hover {
 .login-button a:hover {
   background-color: #E17F93;
   color: white;
+}
+/* log-in page */
+.log-in-page {
+  max-width: 900px;
+  margin: 12% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.log-in-page .log-in-page-image {
+  width: 40%;
+}
+.log-in-page .log-in-page-image img {
+  width: 100%;
+}
+.log-in-page .log-in-form {
+  width: 40%;
+  border: 1px solid #606060;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.log-in-page .log-in-form input[type="text"],
+.log-in-page .log-in-form input[type="password"] {
+  display: block;
+  margin-bottom: 1rem;
+  width: 10rem;
+  text-align: center;
+  margin: 1rem;
+}
+.log-in-page .log-in-form input[type="submit"] {
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: #E17F93;
+  border: #E17F93;
+  display: block;
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+.log-in-page .log-in-form a {
+  color: #606060;
+  text-decoration: none;
+}
+.log-in-page .log-in-form a:hover {
+  color: #E17F93;
+}
+.log-in-page .log-in-form hr {
+  margin: 1rem 0;
 }
