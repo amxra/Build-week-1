@@ -9,6 +9,16 @@
   border-radius: 2rem;
   background-color: #E17F93;
   border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
+}
+.mainButtonHover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
 }
 .linkStyle {
   color: #606060;
@@ -72,20 +82,21 @@ header {
   margin-bottom: 1rem;
 }
 .sign-up-form form a {
-  display: block;
-  text-align: center;
-  width: 12rem;
-  margin-left: 3rem;
   padding: 0.5rem;
   border-radius: 2rem;
   background-color: #E17F93;
   border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
   color: white;
   text-decoration: none;
+  margin-left: 3rem;
 }
 .sign-up-form form a:hover {
   background-color: white;
   color: #E17F93;
+  border: 1px solid #E17F93;
 }
 .login-button {
   width: 100%;
@@ -143,9 +154,30 @@ header {
   border-radius: 2rem;
   background-color: #E17F93;
   border: #E17F93;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
   display: block;
   margin-left: 1.2rem;
   margin-bottom: 1rem;
+}
+.log-in-page .log-in-form .button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #E17F93;
+  border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.log-in-page .log-in-form .button:hover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
 }
 .log-in-page .log-in-form a {
   color: #606060;
@@ -187,6 +219,11 @@ header {
   border-radius: 2rem;
   background-color: #E17F93;
   border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
   padding: 0.5rem 1rem;
 }
 .forgot-password-form form a {
@@ -200,6 +237,22 @@ header {
   width: 100%;
   margin: 1rem;
 }
+.forgot-password-form .button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #E17F93;
+  border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
+}
+.forgot-password-form .button:hover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
+}
 /*Sucess */
 .success-page {
   width: 50%;
@@ -211,9 +264,14 @@ header {
   font-size: 5rem;
 }
 .success-page a {
-  padding: 0.5rem;
+  border: 1px solid #E17F93;
   border-radius: 2rem;
+  color: white;
   background-color: #E17F93;
-  border: #E17F93;
   padding: 1rem 5rem;
+}
+.success-page a:hover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
 }

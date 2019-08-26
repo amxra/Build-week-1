@@ -76,17 +76,11 @@ header{
     }
 
   .sign-up-form form a{
-      display: block;
-      text-align: center;
-     width: 12rem;
-     margin-left: 3rem;
     .mainButton;
-    color: white;
-    text-decoration: none;
+    margin-left: 3rem;
 
     &:hover{
-    background-color: white;
-    color:@navigationBackgroundColor;
+        .mainButtonHover;
     }
 }
 
@@ -153,6 +147,15 @@ header{
             margin-bottom: 1rem;
         }
 
+        .button{
+            .mainButton;
+            margin-bottom: 1rem;
+
+            &:hover{
+                .mainButtonHover
+            }
+        }
+
         a{
             .linkStyle;
 
@@ -214,6 +217,14 @@ header{
         }
     }
 
+    .button{
+        .mainButton;
+
+        &:hover{
+            .mainButtonHover
+        }
+    }
+
 }
 
 
@@ -230,8 +241,14 @@ header{
     }
 
     a{
-        .mainButton;
+        border: 1px solid @navigationBackgroundColor;
+        border-radius: 2rem;
+        color: white;
+        background-color: @navigationBackgroundColor;
         padding: 1rem 5rem;
         
+        &:hover{
+            .mainButtonHover;
+        }
     }
 }
