@@ -38,6 +38,28 @@ h4{
     //     }
 }
 
+.cover{
+    height: 100vh;
+    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.cover::before {
+    background-image: url('/assets/images/background-image.jpg');
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+    }
+
 .site-header{
     border-bottom: 1px solid @accentColor;
     padding: 1rem 2rem;
@@ -57,7 +79,8 @@ h4{
 }
 
 .sign-up-form{
-    border: 2px solid @navigationBackgroundColor;
+    // border: 2px solid @navigationBackgroundColor;
+    background-color: white;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
