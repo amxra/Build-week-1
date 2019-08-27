@@ -28,14 +28,6 @@ h4{
     margin: 0 auto;
     height: 100vh;
     box-sizing: border-box;
-    // border: 1px solid red;
-
-    // &.homepage{
-    //     background-image: url('https://i.pinimg.com/564x/a2/0a/95/a20a9532fe6ebd96e4893058587a3771.jpg');
-    //     background-repeat: no-repeat;
-    //     background-size: 100%;
-    //     // opacity:0.5;
-    //     }
 }
 
 .cover{
@@ -66,20 +58,16 @@ h4{
 }
 
 .sign-up-page{
-
-    padding-top: 10rem;
-   
+    padding-top: 10rem; 
 }
 
 .sign-up-page-header{
     text-align: center;
     padding-top:2rem;
-    box-shadow: 2rem;
-    
+    box-shadow: 2rem;  
 }
 
 .sign-up-form{
-    // border: 2px solid @navigationBackgroundColor;
     background-color: white;
     border-radius: 2rem;
     display: flex;
@@ -89,7 +77,6 @@ h4{
     padding: 1rem;
     width: 50%;
     margin: 5rem auto 2rem auto;
-   
 }
 
 
@@ -99,8 +86,7 @@ h4{
 
     &[type="text"],&[type="email"], &[type="submit"]{
         .formBoxes;
-        width: 18rem;
-        
+        width: 18rem;  
     }
 
     &[type ="password"]{
@@ -110,7 +96,6 @@ h4{
     &[type ="username"], &[type ="password"]{
         margin-bottom: 1rem;
     }
-
 
     }
 
@@ -123,6 +108,7 @@ h4{
     }
 }
 
+
 .login-button{
     width: 100%;
     display: flex;
@@ -130,7 +116,7 @@ h4{
 }
 
 .login-button a{
-    background-color: white;
+    background-color: @navColor;
     border-radius: 2rem;
     width: 10%;
     padding: 0.5rem 2rem;
@@ -149,13 +135,14 @@ h4{
 /* log-in page */
 
 .log-in-page{
-    max-width: 900px;
-    margin: @pageContainerAlingment;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     .log-in-page-image{
-        width: 40%;
+        width: 30%;
         img{
             width: 100%;
         }
@@ -170,6 +157,7 @@ h4{
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 2rem;
 
         input[type ="text"], input[type ="password"]{
             .formBoxes;

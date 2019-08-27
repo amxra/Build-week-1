@@ -146,7 +146,7 @@ h4 {
   justify-content: center;
 }
 .login-button a {
-  background-color: white;
+  background-color: #fff;
   border-radius: 2rem;
   width: 10%;
   padding: 0.5rem 2rem;
@@ -160,13 +160,14 @@ h4 {
 }
 /* log-in page */
 .log-in-page {
-  max-width: 900px;
-  margin: 8% auto;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .log-in-page .log-in-page-image {
-  width: 40%;
+  width: 30%;
 }
 .log-in-page .log-in-page-image img {
   width: 100%;
@@ -180,6 +181,7 @@ h4 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem;
 }
 .log-in-page .log-in-form input[type="text"],
 .log-in-page .log-in-form input[type="password"] {
