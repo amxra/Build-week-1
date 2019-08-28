@@ -416,16 +416,16 @@ h4 {
   width: 100%;
 }
 /* location-lagos */
-.passport-body {
-  margin: 8% auto;
-  margin-top: 5%;
-}
-.passport-body .passport-body-header {
+.passport-body-header {
   border: 1px solid #E17F93;
   text-align: center;
   margin: 1rem auto;
   padding: 1rem;
   width: 40%;
+}
+.passport-body {
+  margin: 8% auto;
+  margin-top: 5%;
 }
 .passport-body .passport-body-content {
   margin: 3rem 2rem;
@@ -543,6 +543,50 @@ h4 {
   margin: 1rem auto;
 }
 .new-passport-body .new-passport-form .button:hover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
+}
+/* New restaurant */
+.new-restaurant-form {
+  margin: 4rem auto;
+  width: 50%;
+  text-align: left;
+  border: 1px solid #E17F93;
+  border-radius: 2rem;
+}
+.new-restaurant-form label[for="restaurantChoice"] h4 {
+  margin: 2rem 1rem;
+}
+.new-restaurant-form .restaurant {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+.new-restaurant-form .restaurant a {
+  color: #606060;
+  text-decoration: none;
+  color: black;
+}
+.new-restaurant-form .restaurant a:hover {
+  color: #E17F93;
+}
+.new-restaurant-form .button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #E17F93;
+  border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 8rem;
+  margin: 1rem auto;
+}
+.new-restaurant-form .button:hover {
   background-color: white;
   color: #E17F93;
   border: 1px solid #E17F93;
