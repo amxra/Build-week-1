@@ -601,18 +601,38 @@ h4 {
 }
 /*review */
 .restaurant-review {
-  border: 1px solid red;
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
 }
-.restaurant-review .items-tried {
-  border: 1px solid blue;
-  width: 30%;
+.restaurant-review .questions {
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.restaurant-review .questions label {
+  margin: 1rem;
 }
 .restaurant-review .review {
-  border: 1px solid red;
   width: 50%;
+}
+.restaurant-review .button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: #E17F93;
+  border: #E17F93;
+  display: block;
+  text-align: center;
+  width: 12rem;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  margin: 3rem auto;
+  width: 8rem;
+}
+.restaurant-review .button:hover {
+  background-color: white;
+  color: #E17F93;
+  border: 1px solid #E17F93;
 }
 .page-nav {
   width: 60%;
