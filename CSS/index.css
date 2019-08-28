@@ -516,14 +516,6 @@ h4 {
   padding: 2rem;
   border-radius: 2rem;
 }
-.new-passport-body .new-passport-form label[for="location"] {
-  display: block;
-}
-.new-passport-body .new-passport-form select#location {
-  border: 3px solid #606060;
-  margin: 1rem auto;
-  width: 30%;
-}
 .new-passport-body .new-passport-form .restaurant {
   width: 50%;
   margin: 0 auto;
@@ -554,6 +546,9 @@ h4 {
   background-color: white;
   color: #E17F93;
   border: 1px solid #E17F93;
+}
+.questions label {
+  display: block;
 }
 /* New restaurant */
 .new-restaurant-form {
