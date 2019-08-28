@@ -634,6 +634,19 @@ h4 {
   color: #E17F93;
   border: 1px solid #E17F93;
 }
+.restaurant-review .answer {
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.restaurant-review .answer p {
+  border: 1px solid #E17F93;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+}
 .page-nav {
   width: 60%;
   text-align: right;
