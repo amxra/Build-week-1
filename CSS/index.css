@@ -335,19 +335,37 @@ h4 {
   border: 1px solid #E17F93;
 }
 /*profile */
-.page-header {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   background-color: #E17F93;
 }
-.page-header header {
+.site-header header {
   width: 30%;
 }
-.page-header header a {
+.site-header header a {
   color: #fff;
   text-decoration: none;
+}
+.site-header nav {
+  width: 60%;
+}
+.page-nav ul li {
+  width: 30%;
+}
+.page-nav .friend {
+  padding: 0.5rem 4rem 0.5rem 0;
+  background-color: white;
+}
+.page-nav .friend span {
+  margin-left: 2rem;
+  color: #606060;
+}
+.page-nav .friend img {
+  width: 1rem;
+  margin: 0 1rem;
 }
 .profile-body {
   max-width: 95%;
@@ -524,7 +542,7 @@ h4 {
   border: 1px solid #E17F93;
   border-radius: 2rem;
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 1rem;
 }
 .new-passport-body .new-passport-form .button {
@@ -549,6 +567,7 @@ h4 {
 }
 .questions label {
   display: block;
+  color: #606060;
 }
 /* New restaurant */
 .new-restaurant-form {
@@ -634,6 +653,9 @@ h4 {
   text-align: center;
   margin: 0 auto;
   padding: 1rem;
+}
+.restaurant-review .answer h5 {
+  color: #606060;
 }
 .restaurant-review .answer p {
   border: 1px solid #E17F93;
