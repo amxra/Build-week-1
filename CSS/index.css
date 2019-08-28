@@ -451,7 +451,9 @@ h4 {
   color: #E17F93;
 }
 .passport-body .passport-body-content .visit-badge,
-.passport-body .passport-body-content .save-badge {
+.passport-body .passport-body-content .save-badge,
+.passport-body .passport-body-content .review-badge,
+.passport-body .passport-body-content .delete-badge {
   width: 10%;
   height: 100%;
   display: flex;
@@ -459,7 +461,9 @@ h4 {
   justify-content: center;
 }
 .passport-body .passport-body-content .visit-badge img,
-.passport-body .passport-body-content .save-badge img {
+.passport-body .passport-body-content .save-badge img,
+.passport-body .passport-body-content .review-badge img,
+.passport-body .passport-body-content .delete-badge img {
   width: 60%;
 }
 .add-restaurant {
@@ -594,6 +598,21 @@ h4 {
   background-color: white;
   color: #E17F93;
   border: 1px solid #E17F93;
+}
+/*review */
+.restaurant-review {
+  border: 1px solid red;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant-review .items-tried {
+  border: 1px solid blue;
+  width: 30%;
+}
+.restaurant-review .review {
+  border: 1px solid red;
+  width: 50%;
 }
 .page-nav {
   width: 60%;
