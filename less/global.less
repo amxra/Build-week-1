@@ -485,7 +485,7 @@ h4{
     border: 1px solid @navigationBackgroundColor;
     display: flex;
     width: 70%;
-    margin: 0 auto;
+    margin: 5rem auto;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 2rem;
@@ -501,5 +501,61 @@ h4{
     .restaurant-menu{
         width: 50%;
         padding: 2rem 8rem;
+    }
+}
+
+
+
+/* New Passport */
+
+
+
+.new-passport-body{
+    width: 80%;
+    margin: @pageContainerAlingment;
+    text-align: center;
+
+    .new-passport-form{
+        margin: 3rem auto;
+        width: 80%;
+        border: 1px solid @navigationBackgroundColor;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        label[for = "location"]{
+            display: block;
+        }
+
+        select#location{
+            border: 3px solid @accentColor;
+            margin: 1rem auto;
+            width: 30%;
+        }
+
+        .restaurant{
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .restaurantChoice{
+            border: 1px solid @navigationBackgroundColor;
+            border-radius: 2rem;
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .button{
+            .mainButton;
+            margin-bottom: 1rem;
+            width: 8rem;
+            margin: 1rem auto;
+
+            &:hover{
+                .mainButtonHover
+            }
+        }
+
     }
 }
