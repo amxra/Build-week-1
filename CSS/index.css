@@ -164,6 +164,7 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row-reverse;
 }
 .log-in-page .log-in-page-image {
   width: 30%;
@@ -349,25 +350,29 @@ h4 {
   text-decoration: none;
 }
 .profile-body {
-  max-width: 80%;
+  max-width: 95%;
   margin: 8% auto;
   display: flex;
   justify-content: space-evenly;
 }
 .bio {
-  max-width: 30%;
+  width: 30%;
   text-align: center;
 }
 .bio .profile-image {
-  border: 1px solid #606060;
-  height: 40%;
-  width: 50%;
+  background: linear-gradient(red, orange, purple);
+  width: 10rem;
+  height: 10rem;
   margin: 2rem auto;
   border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bio .profile-image img {
-  width: 100%;
-  height: 100%;
+  border: 3px solid white;
+  width: 95%;
+  height: 95%;
   border-radius: 6rem;
 }
 .bio h4,
@@ -383,10 +388,9 @@ h4 {
 }
 .passports .stats {
   margin-top: 2rem;
-}
-.passports h4 {
-  display: inline;
-  margin: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .passports ul li {
   border: 1px solid #E17F93;
@@ -421,7 +425,7 @@ h4 {
   text-align: center;
   margin: 1rem auto;
   padding: 1rem;
-  width: 30%;
+  width: 40%;
 }
 .passport-body .passport-body-content {
   margin: 3rem 2rem;
@@ -467,6 +471,7 @@ h4 {
 /*Cactus Page */
 .restaurant-page-header {
   margin: 8% auto;
+  margin-bottom: 3%;
   width: 70%;
   text-align: center;
 }
@@ -487,7 +492,7 @@ h4 {
   width: 40%;
 }
 .restaurant-body .restaurant-menu {
-  width: 40%;
+  width: 50%;
   padding: 2rem 8rem;
 }
 .page-nav {
