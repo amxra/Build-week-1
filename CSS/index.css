@@ -685,8 +685,8 @@ h6 {
   color: #606060;
 }
 @media (max-width: 800px) {
-  .questions textarea,
-  .questions select {
+  textarea,
+  select {
     border: 1px solid #606060;
     width: 100%;
   }
@@ -698,6 +698,11 @@ h6 {
   text-align: left;
   border: 1px solid #E17F93;
   border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .new-restaurant-form {
+    width: 90%;
+  }
 }
 .new-restaurant-form label[for="restaurantChoice"] h4 {
   margin: 2rem 1rem;

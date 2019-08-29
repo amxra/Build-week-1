@@ -724,11 +724,13 @@ h6{
         color: @accentColor;
     }
 
-    textarea,select{
-        @media @tablet{
-            border: 1px solid @accentColor;
-            width: 100%;
-        }
+    
+}
+
+textarea,select{
+    @media @tablet{
+        border: 1px solid @accentColor;
+        width: 100%;
     }
 }
 
@@ -743,6 +745,10 @@ h6{
     text-align: left;
     border: 1px solid @navigationBackgroundColor;
     border-radius: 2rem;
+
+    @media @tablet{
+        width: 90%;
+    }
 
     label[for ="restaurantChoice"] h4{
         margin: 2rem 1rem;
