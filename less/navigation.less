@@ -1,7 +1,8 @@
 
 .page-nav{
-    width: 60%;
+    width: 70%;
     text-align: right;
+    flex-grow: 1;
 
     @media @mobile{
         width: 100%;
@@ -12,6 +13,13 @@
         margin-left: 5rem;
         color: @accentColor;
         width: 30%;
+
+        @media @tablet{
+            display: inline;
+            text-align: center;
+            padding: 1rem;
+            margin: 0;
+        }
 
         @media @mobile{
             display: block;

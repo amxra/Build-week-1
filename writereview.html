@@ -11,107 +11,105 @@
 <body>
 
     <div class="container">
+        <div class="write-review-container">
+            <div class="site-header">
+                <header>
+                    <h2><a href ="profile.html">Restaurant Passport</a></h2>
+                </header>
+                <nav class="page-nav navTwo">
+                    <ul>
+                        <li class="friend"><a href="#"><img src="assets/icons/search.png" alt="search"></a> </li>
+                        <li><a href="login.html">Sign out</a></li>
+                        <li><a href="#">Settings</a></li>
+                            </ul>
+                </nav>
+            </div>
 
-        <div class="site-header">
-            <header>
-                <h2><a href ="profile.html">Restaurant Passport</a></h2>
-            </header>
-            <nav class="page-nav navTwo">
-                <ul>
-                    <li class="friend"><a href="#"><img src="assets/icons/search.png" alt="search"></a> </li>
-                    <li><a href="login.html">Sign out</a></li>
-                    <li><a href="#">Settings</a></li>
-                        </ul>
-            </nav>
-        </div>
 
-
-        <div class="restaurant-body">
-            <div class="restaurant-review">
-                <div class="questions">
-                    <form action="#" method="POST">
-                        <label for="food">What did you have and how much did it cost?</label>
-                        <br>
-                        <textarea name="food" id="food" cols="20" rows="7"></textarea>
-                            
-                    </form>
-                </div>
-                <div class="questions">
+            <div class="restaurant-body">
+                <div class="restaurant-review">
+                    <div class="questions">
                         <form action="#" method="POST">
-                            <label for="food">What was your estimated wait time?</label>
+                            <label for="food">What did you have and how much did it cost?</label>
                             <br>
-                            <select id="lunch" name="lunch">
-                                    <option value="-20"> < 20 mins</option>
-                                    <option value="20-30">20-30 mins</option>
-                                    <option value="30-1">30mins-1hr</option>
-                                    <option value="1+"> 1 hour +</option>
-                                  </select>
+                            <textarea name="food" id="food" cols="20" rows="7"></textarea>
                                 
                         </form>
-                </div>
-
-                <div class="questions">
-                    <form action="#" method="POST">
-                        <label for="food">How was the customer service?</label>
-                        
-                          <select id="service" name="service">
-                                <option value="poor">Poor</option>
-                                <option value="okay">Okay</option>
-                                <option value="great">Great</option>
-                                <option value="awesome">Awesome!</option>
-                           </select>
+                    </div>
+                    <div class="questions">
+                            <form action="#" method="POST">
+                                <label for="food">What was your estimated wait time?</label>
+                                <br>
+                                <select id="lunch" name="lunch">
+                                        <option value="-20"> < 20 mins</option>
+                                        <option value="20-30">20-30 mins</option>
+                                        <option value="30-1">30mins-1hr</option>
+                                        <option value="1+"> 1 hour +</option>
+                                    </select>
                                     
-                    </form>
-                </div>
+                            </form>
+                    </div>
 
-               <div class="questions">
-                    <form action="#" method="POST">
-                            <label for="food">How was the food?</label>
-                              <select id="food" name="food">
+                    <div class="questions">
+                        <form action="#" method="POST">
+                            <label for="food">How was the customer service?</label>
+                            
+                            <select id="service" name="service">
                                     <option value="poor">Poor</option>
                                     <option value="okay">Okay</option>
                                     <option value="great">Great</option>
                                     <option value="awesome">Awesome!</option>
-                               </select>
+                            </select>
                                         
                         </form>
+                    </div>
+
+                <div class="questions">
+                        <form action="#" method="POST">
+                                <label for="food">How was the food?</label>
+                                <select id="food" name="food">
+                                        <option value="poor">Poor</option>
+                                        <option value="okay">Okay</option>
+                                        <option value="great">Great</option>
+                                        <option value="awesome">Awesome!</option>
+                                </select>
+                                            
+                            </form>
+                    </div>
+
+                    <div class="questions">
+                    <form action="#" method="POST">
+                            <label for="food">How was your experience overall?</label>
+                            <br>
+                            <textarea name="food" id="food" cols="20" rows="7"></textarea>
+                    </form>
                 </div>
 
                 <div class="questions">
-                   <form action="#" method="POST">
-                        <label for="food">How was your experience overall?</label>
-                        <br>
-                        <textarea name="food" id="food" cols="20" rows="7"></textarea>
-                   </form>
-               </div>
+                        <form action="#" method="POST">
+                            <label for="food">Will you visit again</label>
+                            <br>
+                            <select id="lunch" name="lunch">
+                                    <option value="yes">yes</option>
+                                    <option value="no">no</option>
+                                </select>
+                                
+                        </form>
 
-               <div class="questions">
-                    <form action="#" method="POST">
-                        <label for="food">Will you visit again</label>
-                        <br>
-                        <select id="lunch" name="lunch">
-                                <option value="yes">yes</option>
-                                <option value="no">no</option>
-                              </select>
-                            
-                    </form>
-
-                    <a href="#" class="button">submit</a>
+                        <a href="#" class="button">submit</a>
+                </div>
+                </div>
+            
             </div>
-            </div>
-           
         </div>
-        <footer class="relative-footer">
-            <div class="footer-links">
-                <a href="#">About us</a>
-                <a href="#">Support</a>
-                <a href="#">Privacy</a>
-                <a href="#">Directory</a>
-            </div>
-            <p>&copy; 2019 Restaurant Passport made with ❤ by amira</p>
-        </footer>
-        
     </div><!--container-->
+    <footer id="footer">
+            <a href="#">About</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy</a>
+            <a href="#">Directory</a>
+    </footer>
+    
     
 </body>
 </html>

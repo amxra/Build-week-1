@@ -65,10 +65,15 @@ h6 {
 }
 .container {
   margin: 0 auto;
-  height: 100vh;
   box-sizing: border-box;
 }
 /*sign up*/
+.sign-up-page {
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 4em;
+}
 @media (max-width: 500px) {
   .cover.sign-up-page {
     padding-top: 3rem;
@@ -93,9 +98,6 @@ h6 {
   height: 100%;
   z-index: -2;
   opacity: 0.4;
-}
-.site-header {
-  padding: 1rem 2rem;
 }
 .sign-up-page {
   padding-top: 10rem;
@@ -136,7 +138,8 @@ h6 {
   margin: 1rem 0;
   border: 1px solid #606060;
   text-align: center;
-  width: 18rem;
+  width: 90%;
+  margin: 1.5rem auto;
 }
 @media (max-width: 500px) {
   .sign-up-form input[type="text"],
@@ -155,6 +158,7 @@ h6 {
 .sign-up-form input[type="username"],
 .sign-up-form input[type="password"] {
   margin-bottom: 1rem;
+  width: 45%;
 }
 @media (max-width: 500px) {
   .sign-up-form input[type="username"],
@@ -194,11 +198,16 @@ h6 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .login-button {
+    margin-bottom: 5rem;
+  }
+}
 .login-button a {
   background-color: #fff;
   border-radius: 2rem;
   width: 10%;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   margin: 0 auto;
   text-align: center;
   color: #E17F93;
@@ -318,13 +327,13 @@ h6 {
   margin: 0 auto;
   margin-bottom: 1rem;
   width: 8rem;
-  margin-left: 2rem;
 }
 @media (max-width: 500px) {
   .log-in-page .log-in-form .button {
     width: 10rem;
     margin-left: 4.5rem;
     margin-bottom: 0;
+    margin-right: 5rem;
   }
 }
 .log-in-page .log-in-form .button:hover {
@@ -802,12 +811,14 @@ h6 {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 2rem;
+  overflow: auto;
+  margin-bottom: 10rem;
 }
 @media (max-width: 800px) {
   .restaurant-body {
     flex-direction: column;
     border: none;
-    margin: 0 auto;
+    margin: 10rem auto;
   }
 }
 @media (max-width: 500px) {
@@ -838,11 +849,11 @@ h6 {
 }
 .restaurant-body .restaurant-menu {
   width: 50%;
-  padding: 2rem 8rem;
+  padding: 2rem;
+  height: 20%;
 }
 @media (max-width: 800px) {
   .restaurant-body .restaurant-menu {
-    height: 70%;
     width: 100%;
   }
 }
@@ -863,6 +874,18 @@ h6 {
   border: 1px solid #E17F93;
   padding: 2rem;
   border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .new-passport-body .new-passport-form {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .new-passport-body .new-passport-form {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 }
 .new-passport-body .new-passport-form .restaurant {
   width: 50%;
@@ -909,14 +932,17 @@ h6 {
 /* New restaurant */
 .new-restaurant-form {
   margin: 4rem auto;
-  width: 50%;
+  width: 80%;
   text-align: left;
   border: 1px solid #E17F93;
   border-radius: 2rem;
 }
 @media (max-width: 800px) {
   .new-restaurant-form {
-    width: 90%;
+    width: 100%;
+    padding: 0;
+    margin: 1.5rem auto;
+    border: none;
   }
 }
 @media (max-width: 500px) {
@@ -1013,88 +1039,40 @@ h6 {
 }
 /*footer */
 footer {
-  border-top: 0.5px solid #606060;
-  padding: 1rem;
+  background-color: white;
+  border-top: 1px solid #606060;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  height: 2em;
+  margin-top: -2rem;
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  clear: both;
 }
-@media (max-width: 800px) {
-  footer {
-    padding: 2rem 0;
-  }
-}
-@media (max-width: 500px) {
-  footer {
-    padding: 0.5rem 0.5rem;
-    justify-content: space-between;
-    position: relative;
-  }
-}
-footer .footer-links {
-  width: 60%;
-}
-@media (max-width: 800px) {
-  footer .footer-links {
-    width: 47%;
-  }
-}
-@media (max-width: 500px) {
-  footer .footer-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-footer .footer-links a {
+footer a {
   color: #606060;
   text-decoration: none;
-  padding: 2rem;
 }
-@media (max-width: 800px) {
-  footer .footer-links a {
-    padding: 0 ;
-    margin-right: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  footer .footer-links a {
-    margin: 0;
-  }
-}
-footer .footer-links a:hover {
+footer a:hover {
   color: #E17F93;
 }
-footer p {
-  width: 35%;
-  color: #606060;
-}
-@media (max-width: 800px) {
-  footer p {
-    width: 50%;
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  footer p {
-    display: none;
-  }
-}
-footer.relative-footer {
-  position: relative;
-}
-@media (max-width: 500px) {
-  .always-fixed-footer {
-    position: fixed;
-  }
+.add-lagos-container,
+.add-passport-container,
+.add-cactus-container,
+.forgot-password-container,
+.friend-container,
+.lagos-container,
+.log-in-page,
+.london-page,
+.profile-container,
+.readreview-container {
+  overflow: auto;
+  margin-bottom: 8rem;
 }
 .page-nav {
-  width: 60%;
+  width: 70%;
   text-align: right;
+  flex-grow: 1;
 }
 @media (max-width: 500px) {
   .page-nav {
@@ -1106,6 +1084,14 @@ footer.relative-footer {
   margin-left: 5rem;
   color: #606060;
   width: 30%;
+}
+@media (max-width: 800px) {
+  .page-nav ul li {
+    display: inline;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
 }
 @media (max-width: 500px) {
   .page-nav ul li {

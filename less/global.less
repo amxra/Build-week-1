@@ -38,11 +38,17 @@ h6{
 
 .container{
     margin: 0 auto;
-    height: 100vh;
     box-sizing: border-box;
 }
 
 /*sign up*/
+
+.sign-up-page{
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 4em;
+}
 
 .cover.sign-up-page{
     @media @mobile{
@@ -56,7 +62,7 @@ h6{
     min-width: 100%;
     min-height: 100%;
     position: relative;
-
+    
 }
 
 .cover::before {
@@ -72,11 +78,6 @@ h6{
     z-index: -2;
     opacity: 0.4;
     }
-
-.site-header{
-    padding: 1rem 2rem;
-}
-
 
 
 .sign-up-page{
@@ -116,7 +117,8 @@ h6{
 
     &[type="text"],&[type="email"], &[type="submit"]{
         .formBoxes;
-        width: 18rem; 
+        width: 90%;
+        margin: 1.5rem auto;
 
         @media @mobile{
             display: block;
@@ -133,6 +135,7 @@ h6{
 
     &[type ="username"], &[type ="password"]{
         margin-bottom: 1rem;
+        width: 45%;
 
         @media @mobile{
             display: block;
@@ -163,13 +166,17 @@ h6{
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media @tablet{
+        margin-bottom: 5rem;
+    }
 }
 
 .login-button a{
     background-color: @navColor;
     border-radius: 2rem;
     width: 10%;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     margin: 0 auto;
     text-align: center;
     color: @navigationBackgroundColor;
@@ -272,12 +279,13 @@ h6{
             .mainButton;
             margin-bottom: 1rem;
             width: 8rem;
-            margin-left: 2rem;
+           
 
             @media @mobile{
                 width: 10rem;
                 margin-left: 4.5rem;
                 margin-bottom: 0;
+                margin-right: 5rem;
             }
 
             &:hover{
@@ -795,11 +803,13 @@ h6{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 2rem;
+    overflow: auto;
+    margin-bottom: 10rem;
 
     @media @tablet{
         flex-direction: column;
         border: none;
-        margin: 0 auto;
+        margin: 10rem auto;
     }
 
     @media @mobile{
@@ -829,10 +839,13 @@ h6{
     }
     .restaurant-menu{
         width: 50%;
-        padding: 2rem 8rem;
+        padding:2rem;
+        height: 20%;
+
+
+
 
         @media @tablet{
-            height: 70%;
             width: 100%;
         }
 
@@ -859,6 +872,16 @@ h6{
         border: 1px solid @navigationBackgroundColor;
         padding: 2rem;
         border-radius: 2rem;
+
+        @media @tablet{
+            margin: 0 auto;
+        }
+
+        @media @mobile{
+            width: 100%;
+            margin: 1rem auto;
+            padding: 1rem;
+        }
 
        
 
@@ -918,13 +941,16 @@ textarea,select{
 
 .new-restaurant-form{
     margin: 4rem auto;
-    width: 50%;
+    width: 80%;
     text-align: left;
     border: 1px solid @navigationBackgroundColor;
     border-radius: 2rem;
 
     @media @tablet{
-        width: 90%;
+        width: 100%;
+        padding: 0;
+        margin: 1.5rem auto;
+        border: none;
     }
 
     @media @mobile{
@@ -1026,82 +1052,30 @@ textarea,select{
 /*footer */
 
 footer{
-    border-top: 0.5px solid @accentColor;
-    padding: 1rem;
+
+    background-color: white;
+    border-top: 1px solid @accentColor;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    height: 2em;
+    margin-top: -2rem;
     display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    
-    @media @tablet{
-        padding:2rem 0;
-    }
+    justify-content: space-around;
+    position: relative;
+    clear: both;
 
-    @media @mobile{
-        padding: 0.5rem 0.5rem;
-        justify-content: space-between;
-        position: relative;
-    }
-
-
-    .footer-links{
-        width: 60%;
-
-        @media @tablet{
-            width: 47%;     
-        }
-
-        @media @mobile{
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        a{
-            .linkStyle;
-            padding: 2rem;
-
-            @media @tablet{
-                padding: 0 ;
-                margin-right: 2rem;  
-            }
-
-            @media @mobile{
-                margin: 0;
-            }
-
-            &:hover{
-                .linkHover;
-            }
-        }
-    }
-
-    p{
-        width: 35%;
+    a{
         color: @accentColor;
+        text-decoration: none;
 
-        @media @tablet{
-            width: 50%;
-            text-align: center;
+        &:hover{
+            .linkHover;
         }
-        @media @mobile{
-            display: none;
-        }
-
-    }
-
-    &.relative-footer{
-        position: relative;
     }
 
 }
 
-.always-fixed-footer{
-    @media @mobile{
-        position: fixed;
-    }
-}
 
+.add-lagos-container, .add-passport-container, .add-cactus-container,.forgot-password-container,.friend-container, .lagos-container, .log-in-page, .london-page, .profile-container, .readreview-container{
+    overflow: auto;
+    margin-bottom: 8rem;
+}
