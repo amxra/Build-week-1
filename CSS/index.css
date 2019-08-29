@@ -227,6 +227,20 @@ h6 {
   align-items: center;
   flex-direction: row-reverse;
 }
+.log-in-page .mobile-header {
+  display: none;
+}
+@media (max-width: 500px) {
+  .log-in-page .mobile-header {
+    display: block;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .log-in-page {
+    display: block;
+  }
+}
 .log-in-page .log-in-page-image {
   width: 30%;
 }
@@ -252,6 +266,19 @@ h6 {
 @media (max-width: 500px) {
   .log-in-page .log-in-form {
     width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 .log-in-page .log-in-form input[type="text"],
@@ -293,6 +320,13 @@ h6 {
   width: 8rem;
   margin-left: 2rem;
 }
+@media (max-width: 500px) {
+  .log-in-page .log-in-form .button {
+    width: 10rem;
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+  }
+}
 .log-in-page .log-in-form .button:hover {
   background-color: white;
   color: #E17F93;
@@ -307,6 +341,12 @@ h6 {
 }
 .log-in-page .log-in-form hr {
   margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form hr {
+    width: 90%;
+    margin: 0;
+  }
 }
 /* Forgot Password */
 .forgot-password-form {
@@ -323,6 +363,12 @@ h6 {
 @media (max-width: 800px) {
   .forgot-password-form {
     margin-top: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .forgot-password-form {
+    width: 90%;
+    margin-top: 40%;
   }
 }
 .forgot-password-form .forgot-password-image {
@@ -509,9 +555,31 @@ h6 {
     margin-top: 20%;
   }
 }
+@media (max-width: 500px) {
+  .profile-body {
+    margin-top: 0;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
 .bio {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bio {
+    width: 100%;
+    border: 1px solid #E17F93;
+    margin-top: 2rem;
+    border-radius: 2rem;
+  }
+}
+.bio .profile-bio {
+  width: 100%;
+  margin: 0 auto;
+}
+.bio .profile-bio h4 {
+  font-weight: bold;
 }
 .bio .profile-image {
   background: linear-gradient(red, orange, purple);
@@ -522,6 +590,13 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .bio .profile-image {
+    width: 30%;
+    height: 15%;
+    margin: 0.5rem auto;
+  }
 }
 .bio .profile-image img {
   border: 3px solid white;
@@ -539,6 +614,12 @@ h6 {
 .passports {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .passports {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 .passports .stats {
   margin-top: 2rem;
@@ -581,6 +662,11 @@ h6 {
 .passport-body {
   max-width: 80%;
 }
+@media (max-width: 500px) {
+  .passport-body {
+    width: 100%;
+  }
+}
 .passport-body-header {
   border: 1px solid #E17F93;
   text-align: center;
@@ -588,11 +674,21 @@ h6 {
   padding: 1rem;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .passport-body-header {
+    width: 100%;
+  }
+}
 .features {
   width: 80%;
   margin: 3rem auto;
   text-align: right;
   padding: 0 1rem;
+}
+@media (max-width: 500px) {
+  .features {
+    text-align: center;
+  }
 }
 .features a {
   text-decoration: none;
@@ -610,6 +706,17 @@ h6 {
   margin: 8% auto;
   margin-top: 5%;
 }
+.passport-body .badges {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .passport-body .badges {
+    width: 100%;
+  }
+}
 .passport-body .passport-body-content {
   margin: 3rem 2rem;
   display: flex;
@@ -617,10 +724,21 @@ h6 {
   align-items: center;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .passport-body .passport-body-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .passport-body .passport-body-content .restaurant-name {
   width: 40%;
   font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .passport-body .passport-body-content .restaurant-name {
+    width: 100%;
+  }
 }
 .passport-body .passport-body-content .restaurant-name a {
   color: black;
@@ -642,7 +760,7 @@ h6 {
 .passport-body .passport-body-content .save-badge img,
 .passport-body .passport-body-content .review-badge img,
 .passport-body .passport-body-content .delete-badge img {
-  width: 30%;
+  width: 100%;
 }
 .add-restaurant {
   width: 15%;
@@ -650,6 +768,16 @@ h6 {
   border-radius: 3rem;
   margin: 1rem auto;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .add-restaurant {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .add-restaurant {
+    width: 50%;
+  }
 }
 .add-restaurant img {
   width: 30%;
@@ -660,6 +788,11 @@ h6 {
   margin-bottom: 3%;
   width: 70%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .restaurant-page-header {
+    width: 100%;
+  }
 }
 .restaurant-body {
   border: 1px solid #E17F93;
@@ -675,6 +808,13 @@ h6 {
     flex-direction: column;
     border: none;
     margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-body {
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
   }
 }
 .restaurant-body h3 {
@@ -704,6 +844,11 @@ h6 {
   .restaurant-body .restaurant-menu {
     height: 70%;
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-body .restaurant-menu {
+    padding: 1rem;
   }
 }
 /* New Passport a*/
@@ -772,6 +917,11 @@ h6 {
 @media (max-width: 800px) {
   .new-restaurant-form {
     width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .new-restaurant-form {
+    border: none;
   }
 }
 .new-restaurant-form label[for="restaurantChoice"] h4 {
@@ -882,6 +1032,7 @@ footer {
   footer {
     padding: 0.5rem 0.5rem;
     justify-content: space-between;
+    position: relative;
   }
 }
 footer .footer-links {
@@ -894,7 +1045,9 @@ footer .footer-links {
 }
 @media (max-width: 500px) {
   footer .footer-links {
-    width: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 footer .footer-links a {
@@ -906,6 +1059,11 @@ footer .footer-links a {
   footer .footer-links a {
     padding: 0 ;
     margin-right: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-links a {
+    margin: 0;
   }
 }
 footer .footer-links a:hover {
@@ -923,11 +1081,16 @@ footer p {
 }
 @media (max-width: 500px) {
   footer p {
-    width: 70%;
+    display: none;
   }
 }
 footer.relative-footer {
   position: relative;
+}
+@media (max-width: 500px) {
+  .always-fixed-footer {
+    position: fixed;
+  }
 }
 .page-nav {
   width: 60%;
