@@ -44,12 +44,19 @@ h6{
 
 /*sign up*/
 
+.cover.sign-up-page{
+    @media @mobile{
+        padding-top: 3rem;
+    }
+}
+
 .cover{
     height: 100vh;
     width: 100vw;
     min-width: 100%;
     min-height: 100%;
     position: relative;
+
 }
 
 .cover::before {
@@ -79,7 +86,10 @@ h6{
 .sign-up-page-header{
     text-align: center;
     padding-top:2rem;
-    box-shadow: 2rem;  
+    
+    @media @mobile{
+        padding-top: 0;
+    }
 }
 
 .sign-up-form{
@@ -92,6 +102,11 @@ h6{
     padding: 1rem;
     width: 50%;
     margin: 5rem auto 2rem auto;
+
+    @media @mobile{
+        margin: 1rem auto;
+        width: 80%;
+    }
 }
 
 
@@ -101,7 +116,15 @@ h6{
 
     &[type="text"],&[type="email"], &[type="submit"]{
         .formBoxes;
-        width: 18rem;  
+        width: 18rem; 
+
+        @media @mobile{
+            display: block;
+            width: 100%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1rem;
+        }
     }
 
     &[type ="password"]{
@@ -110,6 +133,14 @@ h6{
 
     &[type ="username"], &[type ="password"]{
         margin-bottom: 1rem;
+
+        @media @mobile{
+            display: block;
+            width: 100%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1rem;
+        }
     }
 
     }
@@ -117,6 +148,10 @@ h6{
   .sign-up-form form a{
     .mainButton;
     margin-left: 3rem;
+
+    @media @mobile{
+        margin: 0;
+    }
 
     &:hover{
         .mainButtonHover;
@@ -138,9 +173,14 @@ h6{
     margin: 0 auto;
     text-align: center;
     color: @navigationBackgroundColor;
+    text-decoration: none;
 
     @media @tablet{
         width: 15%;
+    }
+
+    @media @mobile{
+        width: 60%;
     }
 
     &:hover{
@@ -166,6 +206,9 @@ h6{
         img{
             width: 100%;
         }
+        @media @mobile{
+            display: none;
+        }
     }
 
     .log-in-form{
@@ -178,6 +221,10 @@ h6{
         justify-content: center;
         text-align: center;
         padding: 2rem;
+
+        @media @mobile{
+            width: 80%;
+        }
 
         input[type ="text"], input[type ="password"]{
             .formBoxes;
@@ -305,9 +352,18 @@ h6{
         margin-top: 40%;
     }
 
+    @media @mobile{
+        width: 80%;
+    }
+
     h1{
         margin-bottom: 5rem;
         font-size: 5rem;
+
+        @media @mobile{
+            margin: 0 0 7rem 0;
+        }
+
     }
 
     a{
@@ -334,11 +390,21 @@ h6{
     padding: 2rem;
     background-color: @navigationBackgroundColor;
 
+    @media @mobile{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
     header{
         width: 30%;
 
         @media @tablet{
             width: 35%;
+        }
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
         }
 
         a{
@@ -354,35 +420,13 @@ h6{
         @media @tablet{
             width: 65%;
         }
+
+        @media @mobile{
+            width: 100%;
+        }
     }
 }
 
-
-.page-nav {
-
-
-    ul li{
-        width: 30%;
-
-
-        a{
-            text-decoration: none;
-
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-
-    &.navTwo{
-
-        .friend{
-            @media @tablet{
-                padding: 0 1rem;
-            } 
-        }
-        
-    }
 
     .friend{
     padding: 0.5rem 4rem 0.5rem 0;
@@ -414,7 +458,7 @@ h6{
 
 }
     
-}
+
 
 
 
@@ -859,11 +903,21 @@ footer{
         padding:2rem 0;
     }
 
+    @media @mobile{
+        padding: 0.5rem 0.5rem;
+        justify-content: space-between;
+    }
+
+
     .footer-links{
         width: 60%;
 
         @media @tablet{
             width: 47%;     
+        }
+
+        @media @mobile{
+            width: 30%;
         }
         
         a{
@@ -888,6 +942,9 @@ footer{
         @media @tablet{
             width: 50%;
             text-align: center;
+        }
+        @media @mobile{
+            width: 70%;
         }
 
     }

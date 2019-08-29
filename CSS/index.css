@@ -69,6 +69,11 @@ h6 {
   box-sizing: border-box;
 }
 /*sign up*/
+@media (max-width: 500px) {
+  .cover.sign-up-page {
+    padding-top: 3rem;
+  }
+}
 .cover {
   height: 100vh;
   width: 100vw;
@@ -98,7 +103,11 @@ h6 {
 .sign-up-page-header {
   text-align: center;
   padding-top: 2rem;
-  box-shadow: 2rem;
+}
+@media (max-width: 500px) {
+  .sign-up-page-header {
+    padding-top: 0;
+  }
 }
 .sign-up-form {
   background-color: white;
@@ -110,6 +119,12 @@ h6 {
   padding: 1rem;
   width: 50%;
   margin: 5rem auto 2rem auto;
+}
+@media (max-width: 500px) {
+  .sign-up-form {
+    margin: 1rem auto;
+    width: 80%;
+  }
 }
 .sign-up-form input {
   border: 1px solid #606060;
@@ -123,12 +138,33 @@ h6 {
   text-align: center;
   width: 18rem;
 }
+@media (max-width: 500px) {
+  .sign-up-form input[type="text"],
+  .sign-up-form input[type="email"],
+  .sign-up-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
+}
 .sign-up-form input[type="password"] {
   margin-left: 1.5rem;
 }
 .sign-up-form input[type="username"],
 .sign-up-form input[type="password"] {
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .sign-up-form input[type="username"],
+  .sign-up-form input[type="password"] {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 .sign-up-form form a {
   padding: 0.5rem;
@@ -142,6 +178,11 @@ h6 {
   text-decoration: none;
   margin: 0 auto;
   margin-left: 3rem;
+}
+@media (max-width: 500px) {
+  .sign-up-form form a {
+    margin: 0;
+  }
 }
 .sign-up-form form a:hover {
   background-color: white;
@@ -161,10 +202,16 @@ h6 {
   margin: 0 auto;
   text-align: center;
   color: #E17F93;
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   .login-button a {
     width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .login-button a {
+    width: 60%;
   }
 }
 .login-button a:hover {
@@ -186,6 +233,11 @@ h6 {
 .log-in-page .log-in-page-image img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .log-in-page .log-in-page-image {
+    display: none;
+  }
+}
 .log-in-page .log-in-form {
   width: 40%;
   border: 1px solid #606060;
@@ -196,6 +248,11 @@ h6 {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form {
+    width: 80%;
+  }
 }
 .log-in-page .log-in-form input[type="text"],
 .log-in-page .log-in-form input[type="password"] {
@@ -342,9 +399,19 @@ h6 {
     margin-top: 40%;
   }
 }
+@media (max-width: 500px) {
+  .success-page {
+    width: 80%;
+  }
+}
 .success-page h1 {
   margin-bottom: 5rem;
   font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .success-page h1 {
+    margin: 0 0 7rem 0;
+  }
 }
 .success-page a {
   border: 1px solid #E17F93;
@@ -366,12 +433,24 @@ h6 {
   padding: 2rem;
   background-color: #E17F93;
 }
+@media (max-width: 500px) {
+  .site-header {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
 .site-header header {
   width: 30%;
 }
 @media (max-width: 800px) {
   .site-header header {
     width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .site-header header {
+    width: 100%;
+    text-align: center;
   }
 }
 .site-header header a {
@@ -386,45 +465,36 @@ h6 {
     width: 65%;
   }
 }
-.page-nav ul li {
-  width: 30%;
-}
-.page-nav ul li a {
-  text-decoration: none;
-}
-.page-nav ul li a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 800px) {
-  .page-nav.navTwo .friend {
-    padding: 0 1rem;
+@media (max-width: 500px) {
+  .site-header nav {
+    width: 100%;
   }
 }
-.page-nav .friend {
+.friend {
   padding: 0.5rem 4rem 0.5rem 0;
   background-color: white;
 }
 @media (max-width: 800px) {
-  .page-nav .friend {
+  .friend {
     padding: 0;
   }
 }
-.page-nav .friend span {
+.friend span {
   margin-left: 2rem;
   color: #606060;
 }
 @media (max-width: 800px) {
-  .page-nav .friend span {
+  .friend span {
     margin-left: 0;
     padding-right: 0.5rem;
   }
 }
-.page-nav .friend img {
+.friend img {
   width: 1rem;
   margin: 0 1rem;
 }
 @media (max-width: 800px) {
-  .page-nav .friend img {
+  .friend img {
     width: 0.5rem;
   }
 }
@@ -808,12 +878,23 @@ footer {
     padding: 2rem 0;
   }
 }
+@media (max-width: 500px) {
+  footer {
+    padding: 0.5rem 0.5rem;
+    justify-content: space-between;
+  }
+}
 footer .footer-links {
   width: 60%;
 }
 @media (max-width: 800px) {
   footer .footer-links {
     width: 47%;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-links {
+    width: 30%;
   }
 }
 footer .footer-links a {
@@ -840,6 +921,11 @@ footer p {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  footer p {
+    width: 70%;
+  }
+}
 footer.relative-footer {
   position: relative;
 }
@@ -847,10 +933,31 @@ footer.relative-footer {
   width: 60%;
   text-align: right;
 }
+@media (max-width: 500px) {
+  .page-nav {
+    width: 100%;
+  }
+}
 .page-nav ul li {
   display: inline;
   margin-left: 5rem;
   color: #606060;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .page-nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+.page-nav ul li a {
+  text-decoration: none;
+}
+.page-nav ul li a:hover {
+  text-decoration: underline;
 }
 .page-nav ul li.search {
   padding: 1rem 0 1rem 3rem;
@@ -865,4 +972,15 @@ footer.relative-footer {
 }
 .page-nav ul li a {
   color: #fff;
+}
+@media (max-width: 800px) {
+  .page-nav.navTwo .friend {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .page-nav.navTwo .friend {
+    width: 60%;
+    margin: 0 auto;
+  }
 }

@@ -3,10 +3,31 @@
     width: 60%;
     text-align: right;
 
+    @media @mobile{
+        width: 100%;
+    }
+
     ul li{
         display: inline;
         margin-left: 5rem;
         color: @accentColor;
+        width: 30%;
+
+        @media @mobile{
+            display: block;
+            width:100%;
+            text-align: center;
+            padding: 1rem;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
 
         &.search{
             padding: 1rem 0 1rem 3rem;
@@ -27,4 +48,19 @@
 
         }
     }
+
+    &.navTwo{
+
+        .friend{
+            @media @tablet{
+                padding: 0 1rem;
+            } 
+            @media @mobile{
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+        
+    }
 }
+
