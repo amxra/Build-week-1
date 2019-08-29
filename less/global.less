@@ -8,20 +8,32 @@ body{
 }
 
 h1{
-    font-size: 3rem;
-}
-
-h3{
-    font-size: 1.8rem;
+    font-size: 2em;
+    margin: 0.67em
 }
 
 h2{
-    font-size: 2.3rem;
+    font-size: 1.5em; 
+    margin: .75em 
 }
 
+h3{
+    font-size: 1.17em; 
+    margin: .83em
+}
+
+
 h4{
-    font-size: 1.3rem;
+    font-size: 1em;
     margin-bottom: 1rem;
+}
+
+h5{
+    font-size: 0.875em
+}
+
+h6{
+    font-size: 0.8125em;
 }
 
 .container{
@@ -29,6 +41,8 @@ h4{
     height: 100vh;
     box-sizing: border-box;
 }
+
+/*sign up*/
 
 .cover{
     height: 100vh;
@@ -124,6 +138,10 @@ h4{
     margin: 0 auto;
     text-align: center;
     color: @navigationBackgroundColor;
+
+    @media @tablet{
+        width: 15%;
+    }
 
     &:hover{
         background-color: @navigationBackgroundColor;
@@ -750,13 +768,26 @@ footer{
     justify-content: center;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    
+    @media @tablet{
+        padding:2rem 0;
+    }
 
     .footer-links{
         width: 60%;
+
+        @media @tablet{
+            width: 47%;     
+        }
         
         a{
             .linkStyle;
             padding: 2rem;
+
+            @media @tablet{
+                padding: 0 ;
+                margin-right: 2rem;  
+            }
 
             &:hover{
                 .linkHover;
@@ -767,6 +798,12 @@ footer{
     p{
         width: 35%;
         color: @accentColor;
+
+        @media @tablet{
+            width: 50%;
+            text-align: center;
+        }
+
     }
 
     &.relative-footer{
