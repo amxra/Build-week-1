@@ -53,7 +53,6 @@ h4{
     }
 
 .site-header{
-    border-bottom: 1px solid @accentColor;
     padding: 1rem 2rem;
 }
 
@@ -737,5 +736,42 @@ h4{
             margin: 1rem auto;
         }
     }
+}
+
+/*footer */
+
+footer{
+    border-top: 0.5px solid @accentColor;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+
+    .footer-links{
+        width: 60%;
+        
+        a{
+            .linkStyle;
+            padding: 2rem;
+
+            &:hover{
+                .linkHover;
+            }
+        }
+    }
+
+    p{
+        width: 35%;
+        color: @accentColor;
+    }
+
+    &.relative-footer{
+        position: relative;
+    }
+
 }
 

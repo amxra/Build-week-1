@@ -80,7 +80,6 @@ h4 {
   opacity: 0.4;
 }
 .site-header {
-  border-bottom: 1px solid #606060;
   padding: 1rem 2rem;
 }
 .sign-up-page {
@@ -690,6 +689,36 @@ h4 {
   padding: 1rem;
   width: 80%;
   margin: 1rem auto;
+}
+/*footer */
+footer {
+  border-top: 0.5px solid #606060;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+}
+footer .footer-links {
+  width: 60%;
+}
+footer .footer-links a {
+  color: #606060;
+  text-decoration: none;
+  padding: 2rem;
+}
+footer .footer-links a:hover {
+  color: #E17F93;
+}
+footer p {
+  width: 35%;
+  color: #606060;
+}
+footer.relative-footer {
+  position: relative;
 }
 .page-nav {
   width: 60%;
