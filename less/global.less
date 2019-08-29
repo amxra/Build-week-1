@@ -225,6 +225,7 @@ h6{
 
 /* Forgot Password */
 
+
 .forgot-password-form{
     border: 1px solid @accentColor;
     margin: @pageContainerAlingment;
@@ -235,6 +236,10 @@ h6{
     align-items: center;
     padding: 2rem;
     border-radius: 2rem;
+
+    @media @tablet{
+       margin-top: 25%;
+    }
 
     .forgot-password-image{
         width: 8rem;
@@ -296,6 +301,10 @@ h6{
     margin: @pageContainerAlingment;
     text-align: center;
 
+    @media @tablet{
+        margin-top: 40%;
+    }
+
     h1{
         margin-bottom: 5rem;
         font-size: 5rem;
@@ -327,6 +336,11 @@ h6{
 
     header{
         width: 30%;
+
+        @media @tablet{
+            width: 35%;
+        }
+
         a{
             color: @navColor;
             text-decoration: none;
@@ -335,16 +349,21 @@ h6{
     }
 
     nav{
-
         width: 60%;
+
+        @media @tablet{
+            width: 65%;
+        }
     }
 }
 
 
 .page-nav {
 
+
     ul li{
         width: 30%;
+
 
         a{
             text-decoration: none;
@@ -355,18 +374,41 @@ h6{
         }
     }
 
+    &.navTwo{
+
+        .friend{
+            @media @tablet{
+                padding: 0 1rem;
+            } 
+        }
+        
+    }
+
     .friend{
     padding: 0.5rem 4rem 0.5rem 0;
     background-color: white;
+
+    @media @tablet{
+        padding: 0;
+    }
   
     span{
         margin-left: 2rem;
         color: @accentColor;
+
+        @media @tablet{
+            margin-left: 0;
+            padding-right: 0.5rem;
+        }
     }
 
     img{
         width: 1rem;
         margin: 0 1rem;
+
+        @media @tablet{
+            width: 0.5rem;
+        }
      
     }
 

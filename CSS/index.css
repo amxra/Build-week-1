@@ -263,6 +263,11 @@ h6 {
   padding: 2rem;
   border-radius: 2rem;
 }
+@media (max-width: 800px) {
+  .forgot-password-form {
+    margin-top: 25%;
+  }
+}
 .forgot-password-form .forgot-password-image {
   width: 8rem;
   height: 8rem;
@@ -332,6 +337,11 @@ h6 {
   margin: 8% auto;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .success-page {
+    margin-top: 40%;
+  }
+}
 .success-page h1 {
   margin-bottom: 5rem;
   font-size: 5rem;
@@ -359,12 +369,22 @@ h6 {
 .site-header header {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .site-header header {
+    width: 35%;
+  }
+}
 .site-header header a {
   color: #fff;
   text-decoration: none;
 }
 .site-header nav {
   width: 60%;
+}
+@media (max-width: 800px) {
+  .site-header nav {
+    width: 65%;
+  }
 }
 .page-nav ul li {
   width: 30%;
@@ -375,17 +395,38 @@ h6 {
 .page-nav ul li a:hover {
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .page-nav.navTwo .friend {
+    padding: 0 1rem;
+  }
+}
 .page-nav .friend {
   padding: 0.5rem 4rem 0.5rem 0;
   background-color: white;
+}
+@media (max-width: 800px) {
+  .page-nav .friend {
+    padding: 0;
+  }
 }
 .page-nav .friend span {
   margin-left: 2rem;
   color: #606060;
 }
+@media (max-width: 800px) {
+  .page-nav .friend span {
+    margin-left: 0;
+    padding-right: 0.5rem;
+  }
+}
 .page-nav .friend img {
   width: 1rem;
   margin: 0 1rem;
+}
+@media (max-width: 800px) {
+  .page-nav .friend img {
+    width: 0.5rem;
+  }
 }
 .profile-body {
   max-width: 95%;
