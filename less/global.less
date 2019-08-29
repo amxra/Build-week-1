@@ -717,9 +717,18 @@ h6{
 
 .questions{
 
+
+
     label{
         display: block;
         color: @accentColor;
+    }
+
+    textarea,select{
+        @media @tablet{
+            border: 1px solid @accentColor;
+            width: 100%;
+        }
     }
 }
 

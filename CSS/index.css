@@ -684,6 +684,13 @@ h6 {
   display: block;
   color: #606060;
 }
+@media (max-width: 800px) {
+  .questions textarea,
+  .questions select {
+    border: 1px solid #606060;
+    width: 100%;
+  }
+}
 /* New restaurant */
 .new-restaurant-form {
   margin: 4rem auto;
