@@ -471,6 +471,27 @@ h4{
 
 }
 
+.features{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 1rem;
+
+    a{
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: @navigationBackgroundColor;
+
+        &:hover{
+            color: @navigationBackgroundColor;
+            background-color: white;
+            border: 1px solid @navigationBackgroundColor;
+        }
+    }
+}
+
 .passport-body{
     margin: @pageContainerAlingment;
     margin-top: 5%;
@@ -519,7 +540,7 @@ h4{
 .add-restaurant{
     .addButton;
     img{
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -590,14 +611,6 @@ h4{
             }
 
 
-        }
-
-        .restaurantChoice{
-            border: 1px solid @navigationBackgroundColor;
-            border-radius: 2rem;
-            width: 80%;
-            margin: 2rem auto;
-            padding: 1rem;
         }
 
         .button{

@@ -455,6 +455,24 @@ h4 {
   padding: 1rem;
   width: 40%;
 }
+.features {
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 0 1rem;
+}
+.features a {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: #E17F93;
+}
+.features a:hover {
+  color: #E17F93;
+  background-color: white;
+  border: 1px solid #E17F93;
+}
 .passport-body {
   margin: 8% auto;
   margin-top: 5%;
@@ -501,7 +519,7 @@ h4 {
   text-align: center;
 }
 .add-restaurant img {
-  width: 50%;
+  width: 30%;
 }
 /*Cactus Page */
 .restaurant-page-header {
@@ -553,13 +571,6 @@ h4 {
 }
 .new-passport-body .new-passport-form .restaurant a:hover {
   color: #E17F93;
-}
-.new-passport-body .new-passport-form .restaurantChoice {
-  border: 1px solid #E17F93;
-  border-radius: 2rem;
-  width: 80%;
-  margin: 2rem auto;
-  padding: 1rem;
 }
 .new-passport-body .new-passport-form .button {
   padding: 0.5rem;
