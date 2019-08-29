@@ -423,7 +423,10 @@ h6{
     margin: @pageContainerAlingment;
     display: flex;
     justify-content: space-evenly;
-    // flex-direction: row-reverse;
+
+    @media @tablet{
+        margin-top: 20%;
+    }
 
 }
 
@@ -521,6 +524,10 @@ h6{
 
 /* location-lagos */
 
+.passport-body{
+    max-width: 80%;
+}
+
 .passport-body-header{
     border: 1px solid @navigationBackgroundColor;
     text-align: center;
@@ -532,7 +539,7 @@ h6{
 
 .features{
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto;
     text-align: right;
     padding: 0 1rem;
 
@@ -623,17 +630,39 @@ h6{
     align-items: center;
     border-radius: 2rem;
 
+    @media @tablet{
+        flex-direction: column;
+        border: none;
+        margin: 0 auto;
+    }
+
     h3{
         margin-bottom: 1rem;
         text-align: center;
+
+        @media @tablet{
+            border: 1px solid @navigationBackgroundColor;
+            border-radius: 2rem;
+        }
     }
 
     .restaurant-bio{
         width: 40%;
+
+        @media @tablet{
+            width: 100%;
+            padding: 0 2rem;
+        }
     }
     .restaurant-menu{
         width: 50%;
         padding: 2rem 8rem;
+
+        @media @tablet{
+            height: 70%;
+            width: 100%;
+        }
+
     }
 }
 

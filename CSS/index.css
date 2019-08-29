@@ -434,6 +434,11 @@ h6 {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+  .profile-body {
+    margin-top: 20%;
+  }
+}
 .bio {
   width: 30%;
   text-align: center;
@@ -503,6 +508,9 @@ h6 {
   text-align: center;
 }
 /* location-lagos */
+.passport-body {
+  max-width: 80%;
+}
 .passport-body-header {
   border: 1px solid #E17F93;
   text-align: center;
@@ -512,7 +520,7 @@ h6 {
 }
 .features {
   width: 80%;
-  margin: 0 auto;
+  margin: 3rem auto;
   text-align: right;
   padding: 0 1rem;
 }
@@ -592,16 +600,41 @@ h6 {
   align-items: center;
   border-radius: 2rem;
 }
+@media (max-width: 800px) {
+  .restaurant-body {
+    flex-direction: column;
+    border: none;
+    margin: 0 auto;
+  }
+}
 .restaurant-body h3 {
   margin-bottom: 1rem;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .restaurant-body h3 {
+    border: 1px solid #E17F93;
+    border-radius: 2rem;
+  }
+}
 .restaurant-body .restaurant-bio {
   width: 40%;
+}
+@media (max-width: 800px) {
+  .restaurant-body .restaurant-bio {
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 .restaurant-body .restaurant-menu {
   width: 50%;
   padding: 2rem 8rem;
+}
+@media (max-width: 800px) {
+  .restaurant-body .restaurant-menu {
+    height: 70%;
+    width: 100%;
+  }
 }
 /* New Passport a*/
 .new-passport-body {
