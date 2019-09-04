@@ -8,26 +8,52 @@ body{
 }
 
 h1{
-    font-size: 3rem;
-}
-
-h3{
-    font-size: 1.8rem;
+    font-size: 2em;
+    margin: 0.67em
 }
 
 h2{
-    font-size: 2.3rem;
+    font-size: 1.5em; 
+    margin: .75em 
 }
 
+h3{
+    font-size: 1.17em; 
+    margin: .83em
+}
+
+
 h4{
-    font-size: 1.3rem;
+    font-size: 1em;
     margin-bottom: 1rem;
+}
+
+h5{
+    font-size: 0.875em
+}
+
+h6{
+    font-size: 0.8125em;
 }
 
 .container{
     margin: 0 auto;
-    height: 100vh;
     box-sizing: border-box;
+}
+
+/*sign up*/
+
+.sign-up-page{
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 4em;
+}
+
+.cover.sign-up-page{
+    @media @mobile{
+        padding-top: 3rem;
+    }
 }
 
 .cover{
@@ -36,6 +62,7 @@ h4{
     min-width: 100%;
     min-height: 100%;
     position: relative;
+    
 }
 
 .cover::before {
@@ -52,12 +79,6 @@ h4{
     opacity: 0.4;
     }
 
-.site-header{
-    border-bottom: 1px solid @accentColor;
-    padding: 1rem 2rem;
-}
-
-
 
 .sign-up-page{
     padding-top: 10rem; 
@@ -66,7 +87,10 @@ h4{
 .sign-up-page-header{
     text-align: center;
     padding-top:2rem;
-    box-shadow: 2rem;  
+    
+    @media @mobile{
+        padding-top: 0;
+    }
 }
 
 .sign-up-form{
@@ -79,6 +103,11 @@ h4{
     padding: 1rem;
     width: 50%;
     margin: 5rem auto 2rem auto;
+
+    @media @mobile{
+        margin: 1rem auto;
+        width: 80%;
+    }
 }
 
 
@@ -88,7 +117,16 @@ h4{
 
     &[type="text"],&[type="email"], &[type="submit"]{
         .formBoxes;
-        width: 18rem;  
+        width: 90%;
+        margin: 1.5rem auto;
+
+        @media @mobile{
+            display: block;
+            width: 100%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1rem;
+        }
     }
 
     &[type ="password"]{
@@ -97,6 +135,15 @@ h4{
 
     &[type ="username"], &[type ="password"]{
         margin-bottom: 1rem;
+        width: 45%;
+
+        @media @mobile{
+            display: block;
+            width: 100%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1rem;
+        }
     }
 
     }
@@ -104,6 +151,10 @@ h4{
   .sign-up-form form a{
     .mainButton;
     margin-left: 3rem;
+
+    @media @mobile{
+        margin: 0;
+    }
 
     &:hover{
         .mainButtonHover;
@@ -115,16 +166,29 @@ h4{
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media @tablet{
+        margin-bottom: 5rem;
+    }
 }
 
 .login-button a{
     background-color: @navColor;
     border-radius: 2rem;
     width: 10%;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     margin: 0 auto;
     text-align: center;
     color: @navigationBackgroundColor;
+    text-decoration: none;
+
+    @media @tablet{
+        width: 15%;
+    }
+
+    @media @mobile{
+        width: 60%;
+    }
 
     &:hover{
         background-color: @navigationBackgroundColor;
@@ -144,10 +208,26 @@ h4{
     align-items: center;
     flex-direction: row-reverse;
 
+    .mobile-header{
+        display: none;
+
+        @media @mobile{
+            display: block;
+            padding: 1rem;
+        }
+    }
+
+    @media @mobile{
+        display: block;
+    }
+
     .log-in-page-image{
         width: 30%;
         img{
             width: 100%;
+        }
+        @media @mobile{
+            display: none;
         }
     }
 
@@ -161,6 +241,24 @@ h4{
         justify-content: center;
         text-align: center;
         padding: 2rem;
+
+        @media @mobile{
+            width: 80%;
+            height: 80%;
+            padding: 0;
+            margin: 2rem auto;
+        }
+
+        form{
+            @media @mobile{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
 
         input[type ="text"], input[type ="password"]{
             .formBoxes;
@@ -181,7 +279,14 @@ h4{
             .mainButton;
             margin-bottom: 1rem;
             width: 8rem;
-            margin-left: 2rem;
+           
+
+            @media @mobile{
+                width: 10rem;
+                margin-left: 4.5rem;
+                margin-bottom: 0;
+                margin-right: 5rem;
+            }
 
             &:hover{
                 .mainButtonHover
@@ -198,6 +303,11 @@ h4{
 
         hr{
             margin: 1rem 0;
+
+            @media @mobile{
+                width: 90%;
+                margin: 0;
+            }
         }
     }
 
@@ -207,6 +317,7 @@ h4{
 
 
 /* Forgot Password */
+
 
 .forgot-password-form{
     border: 1px solid @accentColor;
@@ -218,6 +329,15 @@ h4{
     align-items: center;
     padding: 2rem;
     border-radius: 2rem;
+
+    @media @tablet{
+       margin-top: 25%;
+    }
+
+    @media @mobile{
+        width: 90%;
+        margin-top: 40%;
+    }
 
     .forgot-password-image{
         width: 8rem;
@@ -279,9 +399,22 @@ h4{
     margin: @pageContainerAlingment;
     text-align: center;
 
+    @media @tablet{
+        margin-top: 40%;
+    }
+
+    @media @mobile{
+        width: 80%;
+    }
+
     h1{
         margin-bottom: 5rem;
         font-size: 5rem;
+
+        @media @mobile{
+            margin: 0 0 7rem 0;
+        }
+
     }
 
     a{
@@ -308,8 +441,23 @@ h4{
     padding: 2rem;
     background-color: @navigationBackgroundColor;
 
+    @media @mobile{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
     header{
         width: 30%;
+
+        @media @tablet{
+            width: 35%;
+        }
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+        }
+
         a{
             color: @navColor;
             text-decoration: none;
@@ -318,44 +466,50 @@ h4{
     }
 
     nav{
-
         width: 60%;
+
+        @media @tablet{
+            width: 65%;
+        }
+
+        @media @mobile{
+            width: 100%;
+        }
     }
 }
 
 
-.page-nav {
-
-    ul li{
-        width: 30%;
-
-        a{
-            text-decoration: none;
-
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-
     .friend{
     padding: 0.5rem 4rem 0.5rem 0;
     background-color: white;
+
+    @media @tablet{
+        padding: 0;
+    }
   
     span{
         margin-left: 2rem;
         color: @accentColor;
+
+        @media @tablet{
+            margin-left: 0;
+            padding-right: 0.5rem;
+        }
     }
 
     img{
         width: 1rem;
         margin: 0 1rem;
+
+        @media @tablet{
+            width: 0.5rem;
+        }
      
     }
 
 }
     
-}
+
 
 
 
@@ -364,7 +518,16 @@ h4{
     margin: @pageContainerAlingment;
     display: flex;
     justify-content: space-evenly;
-    // flex-direction: row-reverse;
+
+    @media @tablet{
+        margin-top: 20%;
+    }
+
+    @media @mobile{
+        margin-top: 0;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
 
 }
 
@@ -372,6 +535,22 @@ h4{
     width: 30%;
     text-align: center;
 
+    @media @mobile{
+        width: 100%;
+        border: 1px solid @navigationBackgroundColor;
+        margin-top: 2rem;
+        border-radius: 2rem;
+       
+    }
+
+    .profile-bio{
+        width: 100%;
+        margin: 0 auto;
+
+        h4{
+            font-weight: bold;
+        }
+    }
 
     .profile-image{
         background: linear-gradient(red, orange, purple);
@@ -384,6 +563,12 @@ h4{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media @mobile{
+            width: 30%;
+            height: 15%;
+            margin: 0.5rem auto;
+        }
 
         img{
             border: 3px solid white;
@@ -406,6 +591,11 @@ h4{
     width: 50%;
     text-align: center;
 
+    @media @mobile{
+        width: 100%;
+        margin-top: 10%;
+    }
+
     .stats{
         margin-top: 2rem;
         width: 100%;
@@ -420,6 +610,7 @@ h4{
         margin: 2rem;
         padding: 1.5rem;
         text-align: left;
+
     
         
         img{
@@ -462,6 +653,14 @@ h4{
 
 /* location-lagos */
 
+.passport-body{
+    max-width: 80%;
+
+    @media @mobile{
+        width: 100%;
+    }
+}
+
 .passport-body-header{
     border: 1px solid @navigationBackgroundColor;
     text-align: center;
@@ -469,11 +668,51 @@ h4{
     padding: 1rem;
     width: 40%;
 
+    @media @mobile{
+        width: 100%;
+    }
+
+}
+
+.features{
+    width: 80%;
+    margin: 3rem auto;
+    text-align: right;
+    padding: 0 1rem;
+
+    @media @mobile{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: @navigationBackgroundColor;
+
+        &:hover{
+            color: @navigationBackgroundColor;
+            background-color: white;
+            border: 1px solid @navigationBackgroundColor;
+        }
+    }
 }
 
 .passport-body{
     margin: @pageContainerAlingment;
     margin-top: 5%;
+
+    .badges{
+        display: flex;
+        width: 60%;
+        justify-content: space-evenly;
+        padding: 1rem;
+
+        @media @mobile{
+            width: 100%;
+        }
+    }
 
 
     .passport-body-content{
@@ -482,12 +721,21 @@ h4{
         justify-content: space-between;
         align-items: center;
         height: 100px;
+
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+        }
     
 
         .restaurant-name{
             width: 40%;
             font-size: 2rem;
             text-align: center;
+
+            @media @mobile{
+                width: 100%;
+            }
 
             a{
                 color: black;
@@ -506,7 +754,7 @@ h4{
             align-items: center;
 
             img{
-                width: 30%;
+                width: 100%;
                 
             }
         }
@@ -517,9 +765,18 @@ h4{
 
 
 .add-restaurant{
+
+    @media @tablet{
+        width: 30%;
+    }
+
+    @media @mobile{
+        width: 50%;
+    }
+    
     .addButton;
     img{
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -532,6 +789,10 @@ h4{
     margin-bottom: 3%;
     width: 70%;
     text-align: center;
+
+    @media @mobile{
+        width: 100%;
+    }
 }
 
 .restaurant-body{
@@ -542,18 +803,56 @@ h4{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 2rem;
+    overflow: auto;
+    margin-bottom: 10rem;
+
+    @media @tablet{
+        flex-direction: column;
+        border: none;
+        margin: 10rem auto;
+    }
+
+    @media @mobile{
+        width: 100%;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+    }
 
     h3{
         margin-bottom: 1rem;
         text-align: center;
+
+        @media @tablet{
+            border: 1px solid @navigationBackgroundColor;
+            border-radius: 2rem;
+        }
+
     }
 
     .restaurant-bio{
         width: 40%;
+
+        @media @tablet{
+            width: 100%;
+            padding: 0 2rem;
+        }
     }
     .restaurant-menu{
         width: 50%;
-        padding: 2rem 8rem;
+        padding:2rem;
+        height: 20%;
+
+
+
+
+        @media @tablet{
+            width: 100%;
+        }
+
+        @media @mobile{
+            padding: 1rem;
+        }
+
     }
 }
 
@@ -574,6 +873,16 @@ h4{
         padding: 2rem;
         border-radius: 2rem;
 
+        @media @tablet{
+            margin: 0 auto;
+        }
+
+        @media @mobile{
+            width: 100%;
+            margin: 1rem auto;
+            padding: 1rem;
+        }
+
        
 
         .restaurant{
@@ -592,14 +901,6 @@ h4{
 
         }
 
-        .restaurantChoice{
-            border: 1px solid @navigationBackgroundColor;
-            border-radius: 2rem;
-            width: 80%;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-
         .button{
             .mainButton;
             margin-bottom: 1rem;
@@ -616,9 +917,20 @@ h4{
 
 .questions{
 
+
+
     label{
         display: block;
         color: @accentColor;
+    }
+
+    
+}
+
+textarea,select{
+    @media @tablet{
+        border: 1px solid @accentColor;
+        width: 100%;
     }
 }
 
@@ -629,10 +941,21 @@ h4{
 
 .new-restaurant-form{
     margin: 4rem auto;
-    width: 50%;
+    width: 80%;
     text-align: left;
     border: 1px solid @navigationBackgroundColor;
     border-radius: 2rem;
+
+    @media @tablet{
+        width: 100%;
+        padding: 0;
+        margin: 1.5rem auto;
+        border: none;
+    }
+
+    @media @mobile{
+        border: none;
+    }
 
     label[for ="restaurantChoice"] h4{
         margin: 2rem 1rem;
@@ -726,3 +1049,33 @@ h4{
     }
 }
 
+/*footer */
+
+footer{
+
+    background-color: white;
+    border-top: 1px solid @accentColor;
+    width: 100%;
+    height: 2em;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    clear: both;
+
+    a{
+        color: @accentColor;
+        text-decoration: none;
+
+        &:hover{
+            .linkHover;
+        }
+    }
+
+}
+
+
+.add-lagos-container, .add-passport-container, .add-cactus-container,.forgot-password-container,.friend-container, .lagos-container, .log-in-page, .london-page, .profile-container, .readreview-container{
+    overflow: auto;
+    margin-bottom: 8rem;
+}

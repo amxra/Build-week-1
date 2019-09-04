@@ -42,22 +42,42 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 3rem;
-}
-h3 {
-  font-size: 1.8rem;
+  font-size: 2em;
+  margin: 0.67em;
 }
 h2 {
-  font-size: 2.3rem;
+  font-size: 1.5em;
+  margin: 0.75em;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 0.83em;
 }
 h4 {
-  font-size: 1.3rem;
+  font-size: 1em;
   margin-bottom: 1rem;
+}
+h5 {
+  font-size: 0.875em;
+}
+h6 {
+  font-size: 0.8125em;
 }
 .container {
   margin: 0 auto;
-  height: 100vh;
   box-sizing: border-box;
+}
+/*sign up*/
+.sign-up-page {
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 4em;
+}
+@media (max-width: 500px) {
+  .cover.sign-up-page {
+    padding-top: 3rem;
+  }
 }
 .cover {
   height: 100vh;
@@ -79,17 +99,17 @@ h4 {
   z-index: -2;
   opacity: 0.4;
 }
-.site-header {
-  border-bottom: 1px solid #606060;
-  padding: 1rem 2rem;
-}
 .sign-up-page {
   padding-top: 10rem;
 }
 .sign-up-page-header {
   text-align: center;
   padding-top: 2rem;
-  box-shadow: 2rem;
+}
+@media (max-width: 500px) {
+  .sign-up-page-header {
+    padding-top: 0;
+  }
 }
 .sign-up-form {
   background-color: white;
@@ -102,6 +122,12 @@ h4 {
   width: 50%;
   margin: 5rem auto 2rem auto;
 }
+@media (max-width: 500px) {
+  .sign-up-form {
+    margin: 1rem auto;
+    width: 80%;
+  }
+}
 .sign-up-form input {
   border: 1px solid #606060;
 }
@@ -112,7 +138,19 @@ h4 {
   margin: 1rem 0;
   border: 1px solid #606060;
   text-align: center;
-  width: 18rem;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+@media (max-width: 500px) {
+  .sign-up-form input[type="text"],
+  .sign-up-form input[type="email"],
+  .sign-up-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 .sign-up-form input[type="password"] {
   margin-left: 1.5rem;
@@ -120,6 +158,17 @@ h4 {
 .sign-up-form input[type="username"],
 .sign-up-form input[type="password"] {
   margin-bottom: 1rem;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .sign-up-form input[type="username"],
+  .sign-up-form input[type="password"] {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 .sign-up-form form a {
   padding: 0.5rem;
@@ -134,6 +183,11 @@ h4 {
   margin: 0 auto;
   margin-left: 3rem;
 }
+@media (max-width: 500px) {
+  .sign-up-form form a {
+    margin: 0;
+  }
+}
 .sign-up-form form a:hover {
   background-color: white;
   color: #E17F93;
@@ -144,14 +198,30 @@ h4 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .login-button {
+    margin-bottom: 5rem;
+  }
+}
 .login-button a {
   background-color: #fff;
   border-radius: 2rem;
   width: 10%;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   margin: 0 auto;
   text-align: center;
   color: #E17F93;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .login-button a {
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .login-button a {
+    width: 60%;
+  }
 }
 .login-button a:hover {
   background-color: #E17F93;
@@ -166,11 +236,30 @@ h4 {
   align-items: center;
   flex-direction: row-reverse;
 }
+.log-in-page .mobile-header {
+  display: none;
+}
+@media (max-width: 500px) {
+  .log-in-page .mobile-header {
+    display: block;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .log-in-page {
+    display: block;
+  }
+}
 .log-in-page .log-in-page-image {
   width: 30%;
 }
 .log-in-page .log-in-page-image img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-page-image {
+    display: none;
+  }
 }
 .log-in-page .log-in-form {
   width: 40%;
@@ -182,6 +271,24 @@ h4 {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form {
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .log-in-page .log-in-form input[type="text"],
 .log-in-page .log-in-form input[type="password"] {
@@ -220,7 +327,14 @@ h4 {
   margin: 0 auto;
   margin-bottom: 1rem;
   width: 8rem;
-  margin-left: 2rem;
+}
+@media (max-width: 500px) {
+  .log-in-page .log-in-form .button {
+    width: 10rem;
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
 }
 .log-in-page .log-in-form .button:hover {
   background-color: white;
@@ -237,6 +351,12 @@ h4 {
 .log-in-page .log-in-form hr {
   margin: 1rem 0;
 }
+@media (max-width: 500px) {
+  .log-in-page .log-in-form hr {
+    width: 90%;
+    margin: 0;
+  }
+}
 /* Forgot Password */
 .forgot-password-form {
   border: 1px solid #606060;
@@ -248,6 +368,17 @@ h4 {
   align-items: center;
   padding: 2rem;
   border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .forgot-password-form {
+    margin-top: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .forgot-password-form {
+    width: 90%;
+    margin-top: 40%;
+  }
 }
 .forgot-password-form .forgot-password-image {
   width: 8rem;
@@ -318,9 +449,24 @@ h4 {
   margin: 8% auto;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .success-page {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .success-page {
+    width: 80%;
+  }
+}
 .success-page h1 {
   margin-bottom: 5rem;
   font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .success-page h1 {
+    margin: 0 0 7rem 0;
+  }
 }
 .success-page a {
   border: 1px solid #E17F93;
@@ -342,8 +488,25 @@ h4 {
   padding: 2rem;
   background-color: #E17F93;
 }
+@media (max-width: 500px) {
+  .site-header {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
 .site-header header {
   width: 30%;
+}
+@media (max-width: 800px) {
+  .site-header header {
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .site-header header {
+    width: 100%;
+    text-align: center;
+  }
 }
 .site-header header a {
   color: #fff;
@@ -352,26 +515,43 @@ h4 {
 .site-header nav {
   width: 60%;
 }
-.page-nav ul li {
-  width: 30%;
+@media (max-width: 800px) {
+  .site-header nav {
+    width: 65%;
+  }
 }
-.page-nav ul li a {
-  text-decoration: none;
+@media (max-width: 500px) {
+  .site-header nav {
+    width: 100%;
+  }
 }
-.page-nav ul li a:hover {
-  text-decoration: underline;
-}
-.page-nav .friend {
+.friend {
   padding: 0.5rem 4rem 0.5rem 0;
   background-color: white;
 }
-.page-nav .friend span {
+@media (max-width: 800px) {
+  .friend {
+    padding: 0;
+  }
+}
+.friend span {
   margin-left: 2rem;
   color: #606060;
 }
-.page-nav .friend img {
+@media (max-width: 800px) {
+  .friend span {
+    margin-left: 0;
+    padding-right: 0.5rem;
+  }
+}
+.friend img {
   width: 1rem;
   margin: 0 1rem;
+}
+@media (max-width: 800px) {
+  .friend img {
+    width: 0.5rem;
+  }
 }
 .profile-body {
   max-width: 95%;
@@ -379,9 +559,36 @@ h4 {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+  .profile-body {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .profile-body {
+    margin-top: 0;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
 .bio {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bio {
+    width: 100%;
+    border: 1px solid #E17F93;
+    margin-top: 2rem;
+    border-radius: 2rem;
+  }
+}
+.bio .profile-bio {
+  width: 100%;
+  margin: 0 auto;
+}
+.bio .profile-bio h4 {
+  font-weight: bold;
 }
 .bio .profile-image {
   background: linear-gradient(red, orange, purple);
@@ -392,6 +599,13 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .bio .profile-image {
+    width: 30%;
+    height: 15%;
+    margin: 0.5rem auto;
+  }
 }
 .bio .profile-image img {
   border: 3px solid white;
@@ -409,6 +623,12 @@ h4 {
 .passports {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .passports {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 .passports .stats {
   margin-top: 2rem;
@@ -448,6 +668,14 @@ h4 {
   text-align: center;
 }
 /* location-lagos */
+.passport-body {
+  max-width: 80%;
+}
+@media (max-width: 500px) {
+  .passport-body {
+    width: 100%;
+  }
+}
 .passport-body-header {
   border: 1px solid #E17F93;
   text-align: center;
@@ -455,9 +683,48 @@ h4 {
   padding: 1rem;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .passport-body-header {
+    width: 100%;
+  }
+}
+.features {
+  width: 80%;
+  margin: 3rem auto;
+  text-align: right;
+  padding: 0 1rem;
+}
+@media (max-width: 500px) {
+  .features {
+    text-align: center;
+  }
+}
+.features a {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: #E17F93;
+}
+.features a:hover {
+  color: #E17F93;
+  background-color: white;
+  border: 1px solid #E17F93;
+}
 .passport-body {
   margin: 8% auto;
   margin-top: 5%;
+}
+.passport-body .badges {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .passport-body .badges {
+    width: 100%;
+  }
 }
 .passport-body .passport-body-content {
   margin: 3rem 2rem;
@@ -466,10 +733,21 @@ h4 {
   align-items: center;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .passport-body .passport-body-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .passport-body .passport-body-content .restaurant-name {
   width: 40%;
   font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .passport-body .passport-body-content .restaurant-name {
+    width: 100%;
+  }
 }
 .passport-body .passport-body-content .restaurant-name a {
   color: black;
@@ -491,7 +769,7 @@ h4 {
 .passport-body .passport-body-content .save-badge img,
 .passport-body .passport-body-content .review-badge img,
 .passport-body .passport-body-content .delete-badge img {
-  width: 30%;
+  width: 100%;
 }
 .add-restaurant {
   width: 15%;
@@ -500,8 +778,18 @@ h4 {
   margin: 1rem auto;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .add-restaurant {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .add-restaurant {
+    width: 50%;
+  }
+}
 .add-restaurant img {
-  width: 50%;
+  width: 30%;
 }
 /*Cactus Page */
 .restaurant-page-header {
@@ -509,6 +797,11 @@ h4 {
   margin-bottom: 3%;
   width: 70%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .restaurant-page-header {
+    width: 100%;
+  }
 }
 .restaurant-body {
   border: 1px solid #E17F93;
@@ -518,17 +811,56 @@ h4 {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 2rem;
+  overflow: auto;
+  margin-bottom: 10rem;
+}
+@media (max-width: 800px) {
+  .restaurant-body {
+    flex-direction: column;
+    border: none;
+    margin: 10rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-body {
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
 }
 .restaurant-body h3 {
   margin-bottom: 1rem;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .restaurant-body h3 {
+    border: 1px solid #E17F93;
+    border-radius: 2rem;
+  }
+}
 .restaurant-body .restaurant-bio {
   width: 40%;
 }
+@media (max-width: 800px) {
+  .restaurant-body .restaurant-bio {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
 .restaurant-body .restaurant-menu {
   width: 50%;
-  padding: 2rem 8rem;
+  padding: 2rem;
+  height: 20%;
+}
+@media (max-width: 800px) {
+  .restaurant-body .restaurant-menu {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-body .restaurant-menu {
+    padding: 1rem;
+  }
 }
 /* New Passport a*/
 .new-passport-body {
@@ -543,6 +875,18 @@ h4 {
   padding: 2rem;
   border-radius: 2rem;
 }
+@media (max-width: 800px) {
+  .new-passport-body .new-passport-form {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .new-passport-body .new-passport-form {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
 .new-passport-body .new-passport-form .restaurant {
   width: 50%;
   margin: 0 auto;
@@ -553,13 +897,6 @@ h4 {
 }
 .new-passport-body .new-passport-form .restaurant a:hover {
   color: #E17F93;
-}
-.new-passport-body .new-passport-form .restaurantChoice {
-  border: 1px solid #E17F93;
-  border-radius: 2rem;
-  width: 80%;
-  margin: 2rem auto;
-  padding: 1rem;
 }
 .new-passport-body .new-passport-form .button {
   padding: 0.5rem;
@@ -585,13 +922,33 @@ h4 {
   display: block;
   color: #606060;
 }
+@media (max-width: 800px) {
+  textarea,
+  select {
+    border: 1px solid #606060;
+    width: 100%;
+  }
+}
 /* New restaurant */
 .new-restaurant-form {
   margin: 4rem auto;
-  width: 50%;
+  width: 80%;
   text-align: left;
   border: 1px solid #E17F93;
   border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .new-restaurant-form {
+    width: 100%;
+    padding: 0;
+    margin: 1.5rem auto;
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .new-restaurant-form {
+    border: none;
+  }
 }
 .new-restaurant-form label[for="restaurantChoice"] h4 {
   margin: 2rem 1rem;
@@ -680,14 +1037,76 @@ h4 {
   width: 80%;
   margin: 1rem auto;
 }
+/*footer */
+footer {
+  background-color: white;
+  border-top: 1px solid #606060;
+  width: 100%;
+  height: 2em;
+  margin-top: -2rem;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  clear: both;
+}
+footer a {
+  color: #606060;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #E17F93;
+}
+.add-lagos-container,
+.add-passport-container,
+.add-cactus-container,
+.forgot-password-container,
+.friend-container,
+.lagos-container,
+.log-in-page,
+.london-page,
+.profile-container,
+.readreview-container {
+  overflow: auto;
+  margin-bottom: 8rem;
+}
 .page-nav {
-  width: 60%;
+  width: 70%;
   text-align: right;
+  flex-grow: 1;
+}
+@media (max-width: 500px) {
+  .page-nav {
+    width: 100%;
+  }
 }
 .page-nav ul li {
   display: inline;
   margin-left: 5rem;
   color: #606060;
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .page-nav ul li {
+    display: inline;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .page-nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+.page-nav ul li a {
+  text-decoration: none;
+}
+.page-nav ul li a:hover {
+  text-decoration: underline;
 }
 .page-nav ul li.search {
   padding: 1rem 0 1rem 3rem;
@@ -702,4 +1121,15 @@ h4 {
 }
 .page-nav ul li a {
   color: #fff;
+}
+@media (max-width: 800px) {
+  .page-nav.navTwo .friend {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .page-nav.navTwo .friend {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
